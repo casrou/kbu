@@ -1,0 +1,655 @@
+Valgrækkefølge	Region	Speciale	Enhed	Afdeling	Speciale	Område/Enhed
+1	Midtjylland	Intern medicin	Aarhus Universitetshospital	Hormon og Knoglesygdomme	Almen medicin	Almen praksis RM Øst
+2	Midtjylland	Intern medicin	Aarhus Universitetshospital	Hormon og Knoglesygdomme	Almen medicin	Almen praksis RM Øst
+3	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden, Indre by
+4	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Lungemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+5	Hovedstaden	Neurologi	Bispebjerg og Frederiksberg Hospital	BBH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden, Indre by
+6	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+7	Midtjylland	Intern medicin	Aarhus Universitetshospital	Infektionssygdomme	Almen medicin	Almen praksis RM Øst
+8	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+9	Midtjylland	Intern medicin	Aarhus Universitetshospital	Hormon og Knoglesygdomme	Almen medicin	Almen praksis RM Øst
+10	Syddanmark	Kirurgi	OUH Odense Universitetshospital	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+11	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Endokrinologisk afd. I	Almen medicin	Almen praksis Hovedstaden, Indre by
+12	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+13	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+14	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Kardiologisk afd. Y	Almen medicin	Almen praksis Hovedstaden, Indre by
+15	Midtjylland	Intern medicin	Aarhus Universitetshospital	Hormon og Knoglesygdomme	Almen medicin	Almen praksis RM Øst
+16	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+17	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Endokrinologisk afd. I	Almen medicin	Almen praksis Hovedstaden, Indre by
+18	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+19	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Infektionsmedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+20	Hovedstaden	Neurologi	Bispebjerg og Frederiksberg Hospital	BBH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden, Indre by
+21	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Geriatrisk afd. G	Almen medicin	Almen praksis Fyn
+22	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+23	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Geriatrisk afd. G	Almen medicin	Almen praksis Fyn
+24	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+25	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+26	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Endokrinologisk afd. I	Almen medicin	Almen praksis Hovedstaden, Indre by
+27	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+28	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Infektionsmedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+29	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+30	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+31	Nordjylland	Intern medicin	Aalborg Universitetshospital	Infektionsmed. Afd.	Almen medicin	Almen praksis Nordjylland
+32	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+33	Nordjylland	Intern medicin	Aalborg Universitetshospital	Infektionsmed. Afd.	Almen medicin	Almen praksis Nordjylland
+34	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+35	Midtjylland	Intern medicin	Aarhus Universitetshospital	 Lungesygdomme	Almen medicin	Almen praksis RM Øst
+36	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+37	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+38	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+39	Syddanmark	Intern medicin	Sygehus Lillebælt Vejle	Medicinsk afd.	Almen medicin	Almen praksis Trekanten
+40	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden, Indre by
+41	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Medicinsk mavetarm afd. S	Almen medicin	Almen praksis Fyn
+42	Syddanmark	Intern medicin: Kardiologi	OUH Odense Universitetshospital	Hjertemed. afd. B	Almen medicin	Almen praksis Fyn
+43	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+44	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Lungemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+45	Syddanmark	Intern medicin	OUH Svendborg Sygehus	Medicinsk afd. M	Almen medicin	Almen praksis Fyn
+46	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+47	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Geriatrisk afd. G	Almen medicin	Almen praksis Fyn
+48	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Lungemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+49	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+50	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Lungemed. afd. J	Almen medicin	Almen praksis Fyn
+51	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+52	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+53	Syddanmark	Kirurgi	OUH Odense Universitetshospital	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+54	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Medicinsk mavetarm afd. S	Almen medicin	Almen praksis Fyn
+55	Midtjylland	Intern medicin	Aarhus Universitetshospital	Lever-, Mave- og Tarmsygdomme	Almen medicin	Almen praksis RM Øst
+56	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+57	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+58	Sjælland	Akutmedicin	Sjællands Universitetshospital	KOE, Akutafdeling	Almen medicin	Almen praksis SJ Nord
+59	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+60	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+61	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+62	Hovedstaden	Kirurgi	Bornholms Hospital	Kirurgisk afd.	Intern medicin	Bornholms Hospital
+63	Midtjylland	Intern medicin	Aarhus Universitetshospital	Nyresygdomme	Almen medicin	Almen praksis RM Øst
+64	Midtjylland	Intern medicin	Aarhus Universitetshospital	 Lungesygdomme	Almen medicin	Almen praksis RM Øst
+65	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+66	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+67	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Lungemed. afd. J	Almen medicin	Almen praksis Fyn
+68	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+69	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+70	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+71	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+72	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+73	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+74	Midtjylland	Intern medicin	Aarhus Universitetshospital	 Lungesygdomme	Almen medicin	Almen praksis RM Øst
+75	Syddanmark	Intern medicin	Sygehus Lillebælt Vejle	Medicinsk afd.	Almen medicin	Almen praksis Trekanten
+76	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+77	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Infektionsmedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+78	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+79	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+80	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+81	Hovedstaden	Intern medicin	Bornholms Hospital	Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Bornholm
+82	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+83	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+84	Syddanmark	Neurologi	OUH Odense Universitetshospital	Neurologisk afd. N	Almen medicin	Almen praksis Fyn
+85	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+86	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Lungemed. afd. J	Almen medicin	Almen praksis Fyn
+87	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+88	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+89	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+90	Syddanmark	Urologi	Sygehus Lillebælt Vejle	Urologisk afd.	Almen medicin	Almen praksis Trekanten
+91	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+92	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+93	Midtjylland	Intern medicin	Aarhus Universitetshospital	Infektionssygdomme	Almen medicin	Almen praksis RM Øst
+94	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Lungemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+95	Nordjylland	Neurologi	Aalborg Universitetshospital	Neurologisk Afd.	Almen medicin	Almen praksis Nordjylland
+96	Midtjylland	Intern medicin	Aarhus Universitetshospital	Infektionssygdomme	Almen medicin	Almen praksis RM Øst
+97	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+98	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+99	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+100	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+101	Midtjylland	Intern medicin	Aarhus Universitetshospital	Nyresygdomme	Almen medicin	Almen praksis RM Øst
+102	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+103	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+104	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+105	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+106	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Endokrinologisk afsnit	Almen medicin	Almen praksis Hovedstaden, Indre by
+107	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+108	Midtjylland	Intern medicin	Aarhus Universitetshospital	Lever-, Mave- og Tarmsygdomme	Almen medicin	Almen praksis RM Øst
+109	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, medicinsk	Almen medicin	Almen praksis Hovedstaden, Indre by
+110	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Kardiologisk afd. Y	Almen medicin	Almen praksis Hovedstaden, Indre by
+111	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+112	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Endokrinologisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+113	Hovedstaden	Kirurgi	Bornholms Hospital	Kirurgisk afd.	Intern medicin	Bornholms Hospital
+114	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Kardiologisk afd. Y	Almen medicin	Almen praksis Hovedstaden, Indre by
+115	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Medicinsk mavetarm afd. S	Almen medicin	Almen praksis Fyn
+116	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+117	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+118	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Endokrinologisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+119	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+120	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+121	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Lungemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+122	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+123	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Kardiologisk afd. Y	Almen medicin	Almen praksis Hovedstaden, Indre by
+124	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	GEH, Medicinsk afd. C	Almen medicin	Almen praksis Hovedstaden Ydre By
+125	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	AMH, Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Indre by
+126	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Lungemedicinsk afsnit.	Almen medicin	Almen praksis Hovedstaden Ydre By
+127	Syddanmark	Intern medicin	OUH Odense Universitetshospital	Fælles Akutmodtagelse FAM	Almen medicin	Almen praksis Fyn
+128	Syddanmark	Intern medicin	Sygehus Lillebælt Vejle	Medicinsk afd.	Almen medicin	Almen praksis Trekanten
+129	Syddanmark	Intern medicin	OUH Svendborg Sygehus	Medicinsk afd. M	Almen medicin	Almen praksis Fyn
+130	Syddanmark	Intern medicin	OUH Svendborg Sygehus	Medicinsk afd. M	Almen medicin	Almen praksis Fyn
+131	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+132	Hovedstaden	Neurologi	Bispebjerg og Frederiksberg Hospital	BBH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden, Indre by
+133	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden, Indre by
+134	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+135	Syddanmark	Intern medicin: Kardiologi	OUH Odense Universitetshospital	Hjertemed. afd. B	Almen medicin	Almen praksis Fyn
+136	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+137	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+138	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+139	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Infektionsmedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+140	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, medicinsk	Almen medicin	Almen praksis Hovedstaden, Indre by
+141	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+142	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+143	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Endokrinologisk afd. I	Almen medicin	Almen praksis Hovedstaden, Indre by
+144	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden, Indre by
+145	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+146	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+147	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Lungemedicinsk afsnit.	Almen medicin	Almen praksis Hovedstaden Ydre By
+148	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+149	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+150	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Endokrinologisk afd. I	Almen medicin	Almen praksis Hovedstaden, Indre by
+151	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+152	Syddanmark	Intern medicin	OUH Svendborg Sygehus	Medicinsk afd. M	Almen medicin	Almen praksis Fyn
+153	Nordjylland	Intern medicin	Aalborg Universitetshospital	Endokrinologisk Afd.	Almen medicin	Almen praksis Nordjylland
+154	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+155	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+156	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, medicinsk	Almen medicin	Almen praksis Hovedstaden, Indre by
+157	Hovedstaden	Intern medicin	Bornholms Hospital	Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Bornholm
+158	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+159	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+160	Midtjylland	Urologi	Aarhus Universitetshospital	Urinvejskirurgi	Almen medicin	Almen praksis RM Øst
+161	Midtjylland	Intern medicin	Hospitalsenhed Midt	Diagnostisk Center Medicin	Almen medicin	Almen praksis RM Midt
+162	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+163	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+164	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+165	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+166	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+167	Hovedstaden	Neurologi	Bispebjerg og Frederiksberg Hospital	BBH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden, Indre by
+168	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+169	Syddanmark	Intern medicin: Kardiologi	OUH Odense Universitetshospital	Hjertemed. afd. B	Almen medicin	Almen praksis Fyn
+170	Syddanmark	Intern medicin	OUH Svendborg Sygehus	Medicinsk afd. M	Almen medicin	Almen praksis Fyn
+171	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+172	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+173	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+174	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+175	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+176	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+177	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+178	Syddanmark	Intern medicin: Kardiologi	Sygehus Lillebælt Kolding	Hjertesygdomme	Almen medicin	Almen praksis Trekanten
+179	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+180	Hovedstaden	Neurologi	Herlev og Gentofte Hospital	HEH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden Ydre By
+181	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Kardiologisk afd. Y	Almen medicin	Almen praksis Hovedstaden, Indre by
+182	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+183	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+184	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Hjertemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+185	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+186	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, medicinsk	Almen medicin	Almen praksis Hovedstaden, Indre by
+187	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+188	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+189	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+190	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+191	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+192	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+193	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+194	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+195	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+196	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+197	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+198	Nordjylland	Akutmedicin	Aalborg Universitetshospital	Akut- og Traumecenter	Almen medicin	Almen praksis Nordjylland
+199	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Endokrinologisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+200	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+201	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+202	Midtjylland	Akutmedicin	Hospitalsenheden Horsens	Akutafdelingen, Overafdeling	Almen medicin	Almen praksis RM Øst
+203	Midtjylland	Akutmedicin	Aarhus Universitetshospital	Akutafdeling	Almen medicin	Almen praksis RM Øst
+204	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Medicinsk afd. O	Almen medicin	Almen praksis Hovedstaden Ydre By
+205	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+206	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+207	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+208	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+209	Hovedstaden	Neurologi	Herlev og Gentofte Hospital	HEH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden, Indre by
+210	Midtjylland	Urologi	Aarhus Universitetshospital	Urinvejskirurgi	Almen medicin	Almen praksis RM Øst
+211	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Lungemedicinsk afsnit.	Almen medicin	Almen praksis Hovedstaden Ydre By
+212	Nordjylland	Intern medicin	Aalborg Universitetshospital	Endokrinologisk Afd.	Almen medicin	Almen praksis Nordjylland
+213	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+214	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+215	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+216	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+217	Midtjylland	Intern medicin	Aarhus Universitetshospital	Nyresygdomme	Almen medicin	Almen praksis RM Øst
+218	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Gastroenheden, medicinsk afsnit	Almen medicin	Almen praksis Hovedstaden, Indre by
+219	Nordjylland	Intern medicin	Aalborg Universitetshospital	Lungemed. Afd.	Almen medicin	Almen praksis Nordjylland
+220	Hovedstaden	Intern medicin	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, medicinsk	Almen medicin	Almen praksis Hovedstaden, Indre by
+221	Midtjylland	Intern medicin	Aarhus Universitetshospital	Lever-, Mave- og Tarmsygdomme	Almen medicin	Almen praksis RM Øst
+222	Syddanmark	Ortopædisk kirurgi	OUH Odense Universitetshospital	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+223	Midtjylland	Intern medicin	Aarhus Universitetshospital	Blodsygdomme	Almen medicin	Almen praksis RM Øst
+224	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+225	Midtjylland	Intern medicin	Aarhus Universitetshospital	Blodsygdomme	Almen medicin	Almen praksis RM Øst
+226	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+227	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+228	Midtjylland	Intern medicin	Aarhus Universitetshospital	Blodsygdomme	Almen medicin	Almen praksis RM Øst
+229	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+230	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+231	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+232	Syddanmark	Kirurgi	OUH Svendborg Sygehus	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+233	Midtjylland	Intern medicin	Hospitalsenheden Horsens	Medicinsk Afdeling, Overafdeling	Almen medicin	Almen praksis RM Øst
+234	Midtjylland	Intern medicin	Hospitalsenheden Horsens	Medicinsk Afdeling, Overafdeling	Almen medicin	Almen praksis RM Øst
+235	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+236	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Lungemedicinsk og Endokrinologisk afd., Lungemedicinsk afsnit.	Almen medicin	Almen praksis Hovedstaden Ydre By
+237	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+238	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+239	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+240	Nordjylland	Intern medicin	Aalborg Universitetshospital	Hæmatologisk Afd.	Almen medicin	Almen praksis Nordjylland
+241	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Gastroenheden, medicinsk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+242	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+243	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+244	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+245	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk afd., Hjørring	Almen medicin	Almen praksis Nordjylland
+246	Nordjylland	Intern medicin	Aalborg Universitetshospital	Endokrinologisk Afd.	Almen medicin	Almen praksis Nordjylland
+247	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+248	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+249	Syddanmark	Ortopædisk kirurgi	OUH Odense Universitetshospital	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+250	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+251	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+252	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+253	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+254	Nordjylland	Intern medicin	Aalborg Universitetshospital	Hæmatologisk Afd.	Almen medicin	Almen praksis Nordjylland
+255	Midtjylland	Intern medicin	Hospitalsenheden Horsens	Medicinsk Afdeling, Overafdeling	Almen medicin	Almen praksis RM Øst
+256	Syddanmark	Ortopædisk kirurgi	OUH Odense Universitetshospital	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+257	Hovedstaden	Neurologi	Rigshospitalet	GLO, Neurologisk klinik	Almen medicin	Almen praksis Hovedstaden Ydre By
+258	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+259	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+260	Syddanmark	Ortopædisk kirurgi	OUH Odense Universitetshospital	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+261	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+262	Sjælland	Ortopædisk kirurgi	Holbæk Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+263	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+264	Midtjylland	Kirurgi	Aarhus Universitetshospital	Mave- og Tarmkirurgi 	Almen medicin	Almen praksis RM Øst
+265	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+266	Syddanmark	Intern medicin	Sygehus Lillebælt Vejle	Medicinsk afd.	Almen medicin	Almen praksis Trekanten
+267	Hovedstaden	Neurologi	Herlev og Gentofte Hospital	HEH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden Ydre By
+268	Hovedstaden	Kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Abdominalcenter K, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+269	Syddanmark	Kirurgi	OUH Svendborg Sygehus	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+270	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+271	Hovedstaden	Intern medicin	Nordsjællands Hospital	Endokrinologisk og Nefrologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+272	Nordjylland	Intern medicin	Aalborg Universitetshospital	Lungemed. Afd.	Almen medicin	Almen praksis Nordjylland
+273	Nordjylland	Intern medicin	Aalborg Universitetshospital	Hæmatologisk Afd.	Almen medicin	Almen praksis Nordjylland
+274	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+275	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+276	Nordjylland	Intern medicin	Aalborg Universitetshospital	Lungemed. Afd.	Almen medicin	Almen praksis Nordjylland
+277	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+278	Midtjylland	Kirurgi	Aarhus Universitetshospital	Mave- og Tarmkirurgi 	Almen medicin	Almen praksis RM Øst
+279	Hovedstaden	Intern medicin	Rigshospitalet	GLO, Medicinsk afd., MG	Almen medicin	Almen praksis Hovedstaden Ydre By
+280	Nordjylland	Intern medicin	Aalborg Universitetshospital	Med. Gastro. Afd.	Almen medicin	Almen praksis Nordjylland
+281	Hovedstaden	Intern medicin	Bornholms Hospital	Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Bornholm
+282	Hovedstaden	Intern medicin	Bornholms Hospital	Medicinsk afd.	Almen medicin	Almen praksis Hovedstaden, Bornholm
+283	Syddanmark	Ortopædisk kirurgi	OUH Svendborg Sygehus	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+284	Syddanmark	Intern medicin	Sygehus Lillebælt Kolding	Medicinske sygdomme	Almen medicin	Almen praksis Trekanten
+285	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+286	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden, Indre by
+287	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+288	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+289	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+290	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+291	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden, Indre by
+292	Midtjylland	Kirurgi	Aarhus Universitetshospital	Mave- og Tarmkirurgi 	Almen medicin	Almen praksis RM Øst
+293	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+294	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Hjertemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+295	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+296	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden Ydre By
+297	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+298	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+299	Syddanmark	Neurologi	OUH Odense Universitetshospital	Neurologisk afd. N	Almen medicin	Almen praksis Fyn
+300	Nordjylland	Neurologi	Aalborg Universitetshospital	Neurologisk Afd.	Almen medicin	Almen praksis Nordjylland
+301	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+302	Hovedstaden	Ortopædisk kirurgi	Bispebjerg og Frederiksberg Hospital	BBH, Ortopædkirurgisk afd. M	Almen medicin	Almen praksis Hovedstaden, Indre by
+303	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+304	Hovedstaden	Intern medicin	Nordsjællands Hospital	Endokrinologisk og Nefrologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+305	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+306	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+307	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+308	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+309	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+310	Sjælland	Kirurgi	Sjællands Universitetshospital	KOE, Kirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+311	Midtjylland	Akutmedicin	Regionshospitalet Randers	Akutafdelingen - Randers	Almen medicin	Almen praksis RM Øst
+312	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Hjertemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+313	Hovedstaden	Intern medicin	Amager og Hvidovre Hospital	HVH, Hjertemedicinsk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+314	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+315	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+316	Hovedstaden	Intern medicin	Herlev og Gentofte Hospital	HEH, Gastroenheden, medicinsk afsnit	Almen medicin	Almen praksis Hovedstaden, Indre by
+317	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+318	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+319	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+320	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+321	Midtjylland	Intern medicin	Hospitalsenheden Horsens	Medicinsk Afdeling, Overafdeling	Almen medicin	Almen praksis RM Øst
+322	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+323	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+324	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+325	Syddanmark	Intern medicin: Kardiologi	Sygehus Lillebælt Kolding	Hjertesygdomme	Almen medicin	Almen praksis Trekanten
+326	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+327	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+328	Hovedstaden	Intern medicin	Bornholms Hospital	Medicinsk afd.	Kirurgi	Bornholms Hospital
+329	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+330	Syddanmark	Intern medicin	Sygehus Lillebælt Vejle	Medicinsk afd.	Almen medicin	Almen praksis Trekanten
+331	Hovedstaden	Kirurgi	Herlev og Gentofte Hospital	HEH, Gastroenheden, kirurgisk afsnit	Almen medicin	Almen praksis Hovedstaden Ydre By
+332	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+333	Nordjylland	Intern medicin	Aalborg Universitetshospital	Nyremed. Afd	Almen medicin	Almen praksis Nordjylland
+334	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Ydre By
+335	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+336	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+337	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+338	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+339	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+340	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+341	Nordjylland	Intern medicin	Aalborg Universitetshospital	Nyremed. Afd	Almen medicin	Almen praksis Nordjylland
+342	Midtjylland	Akutmedicin	Hospitalsenhed Midt	Akutafdelingen	Almen medicin	Almen praksis RM Midt
+343	Syddanmark	Kirurgi	OUH Svendborg Sygehus	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+344	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+345	Hovedstaden	Ortopædisk kirurgi	Herlev og Gentofte Hospital	HEH, Ortopædkirurgisk afd. T	Almen medicin	Almen praksis Hovedstaden, Indre by
+346	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+347	Syddanmark	Neurologi	OUH Odense Universitetshospital	Neurologisk afd. N	Almen medicin	Almen praksis Fyn
+348	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+349	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+350	Syddanmark	Kirurgi	Sygehus Lillebælt Kolding	Organkirurgi	Almen medicin	Almen praksis Trekanten
+351	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+352	Hovedstaden	Kirurgi	Bornholms Hospital	Kirurgisk afd.	Almen medicin	Almen praksis Hovedstaden, Bornholm
+353	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+354	Hovedstaden	Neurologi	Rigshospitalet	GLO, Neurologisk klinik	Almen medicin	Almen praksis Hovedstaden Ydre By
+355	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+356	Midtjylland	Intern medicin	Regionshospitalet Gødstrup	Medicinsk Afdeling	Almen medicin	Almen praksis RM Vest
+357	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+358	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+359	Midtjylland	Kirurgi	Aarhus Universitetshospital	Mave- og Tarmkirurgi 	Almen medicin	Almen praksis RM Øst
+360	Hovedstaden	Neurologi	Herlev og Gentofte Hospital	HEH, Neurologisk afd. N	Almen medicin	Almen praksis Hovedstaden Ydre By
+361	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+362	Hovedstaden	Neurologi	Rigshospitalet	GLO, Neurologisk klinik	Almen medicin	Almen praksis Hovedstaden Ydre By
+363	Syddanmark	Neurologi	Sygehus Lillebælt Kolding	Hjerne- og Nervesygdomme	Almen medicin	Almen praksis Trekanten
+364	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+365	Hovedstaden	Neurologi	Rigshospitalet	GLO, Neurologisk klinik	Almen medicin	Almen praksis Hovedstaden Ydre By
+366	Midtjylland	Kirurgi	Aarhus Universitetshospital	Mave- og Tarmkirurgi 	Almen medicin	Almen praksis RM Øst
+367	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+368	Hovedstaden	Neurologi	Nordsjællands Hospital	Neurologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+369	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Ydre By
+370	Syddanmark	Intern medicin: Kardiologi	Sygehus Lillebælt Vejle	Hjertemed. afd.	Almen medicin	Almen praksis Trekanten
+371	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+372	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+373	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+374	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+375	Syddanmark	Intern medicin: Kardiologi	Sygehus Lillebælt Vejle	Hjertemed. afd.	Almen medicin	Almen praksis Trekanten
+376	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+377	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+378	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+379	Syddanmark	Intern medicin: Kardiologi	Sygehus Lillebælt Vejle	Hjertemed. afd.	Almen medicin	Almen praksis Trekanten
+380	Syddanmark	Kirurgi	OUH Odense Universitetshospital	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+381	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+382	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+383	Syddanmark	Ortopædisk kirurgi	OUH Svendborg Sygehus	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+384	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+385	Syddanmark	Kirurgi	OUH Odense Universitetshospital	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+386	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+387	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+388	Hovedstaden	Intern medicin	Nordsjællands Hospital	Endokrinologisk og Nefrologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+389	Nordjylland	Intern medicin	Aalborg Universitetshospital	Med. Gastro. Afd.	Almen medicin	Almen praksis Nordjylland
+390	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+391	Syddanmark	Kirurgi	OUH Svendborg Sygehus	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+392	Syddanmark	Kirurgi	OUH Odense Universitetshospital	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+393	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+394	Sjælland	Intern medicin	Holbæk Sygehus	Medicinsk afd. 	Almen medicin	Almen praksis SJ Nord
+395	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+396	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+397	Syddanmark	Urologi	Sygehus Lillebælt Vejle	Urologisk afd.	Almen medicin	Almen praksis Trekanten
+398	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+399	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+400	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+401	Syddanmark	Kirurgi	OUH Svendborg Sygehus	Kirurgisk afd. A	Almen medicin	Almen praksis Fyn
+402	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+403	Midtjylland	Kirurgi	Hospitalsenheden Horsens	Kirurgi, Overafdeling	Almen medicin	Almen praksis RM Øst
+404	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+405	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+406	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+407	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+408	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden Ydre By
+409	Hovedstaden	Kirurgi	Amager og Hvidovre Hospital	HVH, Gastroenheden, kirurgisk	Almen medicin	Almen praksis Hovedstaden Ydre By
+410	Midtjylland	Kirurgi	Hospitalsenheden Horsens	Kirurgi, Overafdeling	Almen medicin	Almen praksis RM Øst
+411	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+412	Hovedstaden	Urologi	Herlev og Gentofte Hospital	HEH, Urologisk afd. H	Almen medicin	Almen praksis Hovedstaden, Indre by
+413	Syddanmark	Ortopædisk kirurgi	OUH Svendborg Sygehus	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+414	Hovedstaden	Intern medicin	Nordsjællands Hospital	Endokrinologisk og Nefrologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+415	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+416	Sjælland	Urologi	Sjællands Universitetshospital	ROS, Urologisk afd.	Almen medicin	Almen praksis SJ Nord
+417	Syddanmark	Ortopædisk kirurgi	OUH Svendborg Sygehus	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+418	Midtjylland	Intern medicin	Regionshospitalet Gødstrup	Medicinsk Afdeling	Almen medicin	Almen praksis RM Vest
+419	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+420	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+421	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+422	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+423	Hovedstaden	Neurologi	Nordsjællands Hospital	Neurologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+424	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+425	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+426	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+427	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+428	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+429	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+430	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+431	Hovedstaden	Ortopædisk kirurgi	Amager og Hvidovre Hospital	HVH, Ortopædkirurgisk afd.	Almen medicin	Almen praksis Hovedstaden Ydre By
+432	Midtjylland	Intern medicin	Hospitalsenhed Midt	Medicinsk Afdeling	Almen medicin	Almen praksis RM Midt
+433	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+434	Midtjylland	Kirurgi	Regionshospitalet Randers	Mave- og Tarmkirurgi - Randers 	Almen medicin	Almen praksis RM Øst
+435	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+436	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+437	Syddanmark	Ortopædisk kirurgi	OUH Svendborg Sygehus	Ortopædkir. afd. O	Almen medicin	Almen praksis Fyn
+438	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+439	Hovedstaden	Neurologi	Nordsjællands Hospital	Neurologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Ydre By
+440	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+441	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+442	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+443	Syddanmark	Urologi	Sydvestjysk Sygehus Esbjerg	Urinvejskirurgi	Almen medicin	Almen praksis Sydvestjylland
+444	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+445	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+446	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+447	Midtjylland	Kirurgi	Hospitalsenheden Horsens	Kirurgi, Overafdeling	Almen medicin	Almen praksis RM Øst
+448	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+449	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+450	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Randers	Ortopædkirurgi - Randers	Almen medicin	Almen praksis RM Øst
+451	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+452	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+453	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+454	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+455	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+456	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+457	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+458	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+459	Syddanmark	Neurologi	Sygehus Lillebælt Kolding	Hjerne- og Nervesygdomme	Almen medicin	Almen praksis Trekanten
+460	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+461	Midtjylland	Neurologi	Regionshospitalet Gødstrup	Neurologisk Klinik Gødstrup 	Almen medicin	Almen praksis RM Vest
+462	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+463	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+464	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+465	Midtjylland	Kirurgi	Hospitalsenheden Horsens	Kirurgi, Overafdeling	Almen medicin	Almen praksis RM Øst
+466	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+467	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+468	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+469	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+470	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+471	Midtjylland	Kirurgi	Regionshospitalet Gødstrup	Mave- og Tarmkirurgi	Almen medicin	Almen praksis RM Vest
+472	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+473	Hovedstaden	Akutmedicin	Nordsjællands Hospital	Akutafdelingen, Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+474	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Gødstrup	Ortopædkirurgi  	Almen medicin	Almen praksis RM Vest
+475	Syddanmark	Kirurgi	Sygehus Lillebælt Kolding	Organkirurgi	Almen medicin	Almen praksis Trekanten
+476	Sjælland	Intern medicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Medicinsk afd. 2 - endokrinologisk afs.	Almen medicin	Almen praksis SJ Syd
+477	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+478	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+479	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+480	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Vejle	Ortopædkir. afd.	Almen medicin	Almen praksis Trekanten
+481	Midtjylland	Kirurgi	Regionshospitalet Gødstrup	Mave- og Tarmkirurgi	Almen medicin	Almen praksis RM Vest
+482	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Hjertesygdomme	Almen medicin	Almen praksis Sønderjylland
+483	Midtjylland	Neurologi	Regionshospitalet Gødstrup	Neurologisk Klinik Gødstrup 	Almen medicin	Almen praksis RM Vest
+484	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+485	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+486	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+487	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+488	Syddanmark	Urologi	Sygehus Lillebælt Vejle	Urologisk afd.	Almen medicin	Almen praksis Trekanten
+489	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+490	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+491	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+492	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Ydre By
+493	Midtjylland	Intern medicin	Regionshospitalet Gødstrup	Medicinsk Afdeling	Almen medicin	Almen praksis RM Vest
+494	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+495	Sjælland	Ortopædisk kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+496	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+497	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+498	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+499	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+500	Hovedstaden	Intern medicin	Nordsjællands Hospital	Kardiologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+501	Midtjylland	Ortopædisk kirurgi	Regionshospitalet Gødstrup	Ortopædkirurgi  	Almen medicin	Almen praksis RM Vest
+502	Sjælland	Intern medicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Medicinsk afd. 3 - geriatrisk afs.	Almen medicin	Almen praksis SJ Syd
+503	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+504	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+505	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+506	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+507	Syddanmark	Kirurgi	Sygehus Lillebælt Kolding	Organkirurgi	Almen medicin	Almen praksis Trekanten
+508	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+509	Hovedstaden	Intern medicin	Nordsjællands Hospital	Lunge- og infektionsmed. afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+510	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+511	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+512	Sjælland	Ortopædisk kirurgi	Holbæk Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+513	Sjælland	Urologi	Sjællands Universitetshospital	ROS, Urologisk afd.	Almen medicin	Almen praksis SJ Nord
+514	Sjælland	Intern medicin	Holbæk Sygehus	Medicinsk afd. 	Almen medicin	Almen praksis SJ Nord
+515	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+516	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+517	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+518	Sjælland	Kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Kirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+519	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+520	Syddanmark	Kirurgi	Sygehus Lillebælt Kolding	Organkirurgi	Almen medicin	Almen praksis Trekanten
+521	Nordjylland	Akutmedicin	Regionshospital Nordjylland	Akutmodtagelsen	Almen medicin	Almen praksis Nordjylland
+522	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk afd., Hjørring	Almen medicin	Almen praksis Nordjylland
+523	Sjælland	Kirurgi	Sjællands Universitetshospital	KOE, Kirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+524	Syddanmark	Intern medicin	Sydvestjysk Sygehus Esbjerg	Fælles Medicinske afdelinger	Almen medicin	Almen praksis Sydvestjylland
+525	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+526	Hovedstaden	Neurologi	Nordsjællands Hospital	Neurologisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+527	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+528	Sjælland	Kirurgi	Holbæk Sygehus	Kirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+529	Nordjylland	Neurologi	Aalborg Universitetshospital	Neurologisk Afd.	Almen medicin	Almen praksis Nordjylland
+530	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+531	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+532	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+533	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+534	Syddanmark	Ortopædisk kirurgi	Sygehus Lillebælt Kolding	Ortopædkirurgi	Almen medicin	Almen praksis Trekanten
+535	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+536	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+537	Nordjylland	Urologi	Aalborg Universitetshospital	Urologisk Afd.	Almen medicin	Almen praksis Nordjylland
+538	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+539	Midtjylland	Urologi	Regionshospitalet Gødstrup	Urinvejskirurgi  	Almen medicin	Almen praksis RM Vest
+540	Sjælland	Kirurgi	Holbæk Sygehus	Kirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+541	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+542	Midtjylland	Intern medicin	Regionshospitalet Gødstrup	Medicinsk Afdeling	Almen medicin	Almen praksis RM Vest
+543	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+544	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+545	Hovedstaden	Kirurgi	Nordsjællands Hospital	Kirurgisk Afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+546	Syddanmark	Kirurgi	Sygehus Lillebælt Kolding	Organkirurgi	Almen medicin	Almen praksis Trekanten
+547	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+548	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+549	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+550	Syddanmark	Neurologi	Sydvestjysk Sygehus Esbjerg	Hjerne- og Nervesygdomme	Almen medicin	Almen praksis Sydvestjylland
+551	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+552	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+553	Hovedstaden	Ortopædisk kirurgi	Nordsjællands Hospital	Ortopædkirurgisk afd., Hillerød	Almen medicin	Almen praksis Hovedstaden Nord
+554	Sjælland	Ortopædisk kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+555	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+556	Nordjylland	Urologi	Aalborg Universitetshospital	Urologisk Afd.	Almen medicin	Almen praksis Nordjylland
+557	Sjælland	Ortopædisk kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+558	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+559	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+560	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+561	Sjælland	Intern medicin	Holbæk Sygehus	Medicinsk afd. 	Almen medicin	Almen praksis SJ Nord
+562	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+563	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+564	Sjælland	Akutmedicin	Holbæk Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Nord
+565	Syddanmark	Neurologi	Sydvestjysk Sygehus Esbjerg	Hjerne- og Nervesygdomme	Almen medicin	Almen praksis Sydvestjylland
+566	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+567	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+568	Syddanmark	Intern medicin	Sygehus Sønderjylland Sønderborg	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+569	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+570	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+571	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+572	Sjælland	Intern medicin	Nykøbing F. Sygehus	Medicinsk afd.	Almen medicin	Almen praksis SJ Syd
+573	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+574	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+575	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+576	Sjælland	Kirurgi	Holbæk Sygehus	Kirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+577	Sjælland	Kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Kirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+578	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+579	Midtjylland	Urologi	Regionshospitalet Gødstrup	Urinvejskirurgi  	Almen medicin	Almen praksis RM Vest
+580	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+581	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+582	Sjælland	Intern medicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Medicinsk afd. 1	Almen medicin	Almen praksis SJ Syd
+583	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+584	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+585	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+586	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+587	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+588	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+589	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk afd., Hjørring	Almen medicin	Almen praksis Nordjylland
+590	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+591	Nordjylland	Kirurgi	Aalborg Universitetshospital	Kir. Afd, afsnit syd, Aalborg	Almen medicin	Almen praksis Nordjylland
+592	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+593	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+594	Sjælland	Kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Kirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+595	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+596	Sjælland	Ortopædisk kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+597	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+598	Sjælland	Intern medicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Medicinsk afd. 1	Almen medicin	Almen praksis SJ Syd
+599	Nordjylland	Urologi	Aalborg Universitetshospital	Urologisk Afd.	Almen medicin	Almen praksis Nordjylland
+600	Sjælland	Ortopædisk kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+601	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+602	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+603	Midtjylland	Akutmedicin	Regionshospitalet Gødstrup	Akutafdelingen	Almen medicin	Almen praksis RM Vest
+604	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+605	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+606	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+607	Nordjylland	Ortopædisk kirurgi	Aalborg Universitetshospital	Ortopædkirurgisk Afd., Aalborg	Almen medicin	Almen praksis Nordjylland
+608	Nordjylland	Kirurgi	Regionshospital Nordjylland	Kir. Område	Almen medicin	Almen praksis Nordjylland
+609	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Fælles Akut Modtagelse	Almen medicin	Almen praksis Sønderjylland
+610	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Fælles Akut Modtagelse	Almen medicin	Almen praksis Sønderjylland
+611	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+612	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+613	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Fælles Akut Modtagelse	Almen medicin	Almen praksis Sønderjylland
+614	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+615	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+616	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+617	Syddanmark	Ortopædisk kirurgi	Sygehus Sønderjylland Aabenraa	Ortopædkirurgi	Almen medicin	Almen praksis Sønderjylland
+618	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+619	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Hjertesygdomme	Almen medicin	Almen praksis Sønderjylland
+620	Sjælland	Intern medicin	Nykøbing F. Sygehus	Medicinsk afd.	Almen medicin	Almen praksis SJ Syd
+621	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+622	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+623	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+624	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+625	Sjælland	Akutmedicin	Næstved, Slagelse og Ringsted Sygehuse	SLA, Akutafdeling	Almen medicin	Almen praksis SJ Syd
+626	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+627	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+628	Sjælland	Kirurgi	Næstved, Slagelse og Ringsted Sygehuse	SLA, Kirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+629	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+630	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Hjertesygdomme	Almen medicin	Almen praksis Sønderjylland
+631	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+632	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+633	Sjælland	Ortopædisk kirurgi	Holbæk Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Nord
+634	Nordjylland	Intern medicin	Aalborg Universitetshospital - Thisted	Medicinsk afd.	Almen medicin	Almen praksis Nordjylland
+635	Syddanmark	Urologi	Sydvestjysk Sygehus Esbjerg	Urinvejskirurgi	Almen medicin	Almen praksis Sydvestjylland
+636	Syddanmark	Ortopædisk kirurgi	Sygehus Sønderjylland Aabenraa	Ortopædkirurgi	Almen medicin	Almen praksis Sønderjylland
+637	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+638	Syddanmark	Kirurgi	Sydvestjysk Sygehus Esbjerg	Mave- og Tarmsygdomme	Almen medicin	Almen praksis Sydvestjylland
+639	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+640	Syddanmark	Ortopædisk kirurgi	Sydvestjysk Sygehus Esbjerg	Ortopædkirurgi	Almen medicin	Almen praksis Sydvestjylland
+641	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+642	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
+643	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+644	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+645	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+646	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+647	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+648	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+649	Sjælland	Ortopædisk kirurgi	Nykøbing F. Sygehus	Ortopædkirurgisk afd.	Almen medicin	Almen praksis SJ Syd
+650	Syddanmark	Kirurgi	Sygehus Sønderjylland Aabenraa	Kirurgi	Almen medicin	Almen praksis Sønderjylland
+651	Syddanmark	Ortopædisk kirurgi	Sygehus Sønderjylland Aabenraa	Ortopædkirurgi	Almen medicin	Almen praksis Sønderjylland
+652	Syddanmark	Ortopædisk kirurgi	Sygehus Sønderjylland Aabenraa	Ortopædkirurgi	Almen medicin	Almen praksis Sønderjylland
+653	Syddanmark	Intern medicin	Sygehus Sønderjylland Aabenraa	Medicinske Sygdomme	Almen medicin	Almen praksis Sønderjylland
+654	Sjælland	Akutmedicin	Nykøbing F. Sygehus	Akutafdeling	Almen medicin	Almen praksis SJ Syd
