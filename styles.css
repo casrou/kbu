@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
 
 :root {
   --light-grey: #00000010;
@@ -8,6 +7,10 @@
   --accent-primary: #D4A373;
   --accent-secondary: #FAEDCD;
   --base: #FEFAE0;
+}
+
+body {
+    margin-top: 40px;
 }
 
 body, input, select, option, span {
@@ -57,9 +60,9 @@ h1 {
 .selections {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  width: 100%;
   column-gap: 20px;
-  /* width: 100%;
-  min-width: 400px; */
+  min-width: 400px;
 }
 
 .selection {
