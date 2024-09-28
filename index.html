@@ -1,173 +1,232 @@
 <!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tidligere valg af KBU forløb</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-<head>
-  <title>Tidligere valg af KBU forløb</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <script src="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.js"></script>
+    <link
+      href="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
 
-<body>
-  <div class="wrapper">
-    <div class="header">
-      <h1>Tidligere valg af KBU forløb</h1>
-      <p class="description">
-        Find ud af hvad dit nummer ville have givet af muligheder i tidligere
-        runder
-      </p>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Tidligere valg af KBU forløb</h1>
+        <p class="description">
+          Find ud af hvad dit nummer ville have givet af muligheder i tidligere
+          runder
+        </p>
+      </div>
+      <div class="selections">
+        <div class="selection">
+          <label for="input-nummer">Nummer</label>
+          <input
+            id="input-nummer"
+            type="number"
+            min="1"
+            max="1000"
+            placeholder="1"
+          />
+        </div>
+        <div class="selection">
+          <label for="input-year">År</label>
+          <select id="input-year" multiple>
+            <option value="0">Sommeren 2022</option>
+            <option value="1">Vinteren 2022-2023</option>
+            <option value="2">Sommeren 2023</option>
+            <option value="3">Vinteren 2023-2024</option>
+          </select>
+        </div>
+        <div class="selection">
+          <label for="input-speciale">Speciale</label>
+          <select id="input-speciale" multiple></select>
+        </div>
+        <div class="selection">
+          <label for="input-enhed">Enhed</label>
+          <select id="input-enhed" multiple></select>
+        </div>
+        <div class="selection">
+          <label for="input-submit"><br /></label>
+          <input id="input-submit" type="button" value="Søg" />
+        </div>
+      </div>
+      <div id="map"></div>
+      <div class="results" id="results">
+        <span class="table-header">Nummer</span>
+        <span class="table-header">Speciale</span>
+        <span class="table-header">Enhed</span>
+        <span class="table-header">Afdeling</span>
+      </div>
     </div>
-    <div class="selections">
-      <div class="selection">
-        <label for="input-nummer">Nummer</label>
-        <input
-          id="input-nummer"
-          type="number"
-          min="1"
-          max="1000"
-          placeholder="1"
-        />
-      </div>
-      <div class="selection">
-        <label for="input-year">År</label>
-        <select id="input-year" multiple>
-          <option value="0">Sommeren 2022</option>
-          <option value="1">Vinteren 2022-2023</option>
-          <option value="2">Sommeren 2023</option>
-          <option value="3">Vinteren 2023-2024</option>
-        </select>
-      </div>
-      <div class="selection">
-        <label for="input-speciale">Speciale</label>
-        <select id="input-speciale" multiple></select>
-      </div>
-      <div class="selection">
-        <label for="input-enhed">Enhed</label>
-        <select id="input-enhed" multiple></select>
-      </div>
-      <div class="selection">
-        <label for="input-submit"><br></label>
-        <input id="input-submit" type="button" value="Søg" />
-      </div>
-    </div>
-    <div class="results" id="results">
-      <span class="table-header">Nummer</span>
-      <span class="table-header">Speciale</span>
-      <span class="table-header">Enhed</span>
-      <span class="table-header">Afdeling</span>
-    </div>
-  </div>
 
-  <script type="module">
-    const results = await fetchResults();
-    populateInputs(results.flat());
+    <script type="module">
+      var map = new maplibregl.Map({
+        container: "map", // container id
+        style:
+          "https://api.maptiler.com/maps/basic-v2/style.json?key=4oZhY3NiUFERNYdnnM6t", // style URL
+        center: [10.8, 56], // starting position [lng, lat]
+        zoom: 6.5, // starting zoom
+      });
 
-    document.getElementById("input-submit").onclick = async () => {
-      clearTable()
+      const results = await fetchResults();
+      const locations = await fetchLocations();
 
-      let inputYear = document.getElementById("input-year");
-      let collection = inputYear.selectedOptions;
+      var markers = [];
 
-      let populate = []
-      for (let i = 0; i < collection.length; i++) {
-        const element = collection[i];
-        populate = populate.concat(results[element.value])
+      populateInputs(results.flat());
+
+      document.getElementById("input-submit").onclick = async () => {
+        clearTable();
+
+        let inputYear = document.getElementById("input-year");
+        let collection = inputYear.selectedOptions;
+
+        let populate = [];
+        for (let i = 0; i < collection.length; i++) {
+          const element = collection[i];
+          populate = populate.concat(results[element.value]);
+        }
+
+        let final = populate.sort((a, b) => a.nummer - b.nummer);
+
+        let nummer = document.getElementById("input-nummer").value;
+        final = filterNummer(final, nummer);
+
+        let specialer = Array.from(
+          document.getElementById("input-speciale").selectedOptions
+        ).map((o) => o.label);
+        final = filterSpeciale(final, specialer);
+
+        let enheder = Array.from(
+          document.getElementById("input-enhed").selectedOptions
+        ).map((o) => o.label);
+        final = filterEnhed(final, enheder);
+
+        final.forEach((p) => addResultRow(p));
+
+        markers.forEach((m) => m.remove());
+        enheder.forEach((e) => addMapMarker(e));
+      };
+
+      function addMapMarker(enhed) {
+        let location = locations.find((e) => e.enhed === enhed).result
+          .places[0];
+        console.debug(location);
+
+        const popup = new maplibregl.Popup({ }).setText(enhed);
+
+        let marker = new maplibregl.Marker({ color: "#33333390" })
+          .setLngLat([location.location.longitude, location.location.latitude])
+          .setPopup(popup)
+          .addTo(map);
+        markers.push(marker);
+
+        // new maplibregl.Marker()
+        // .setLngLat([10.1717607, 56.191843999999996])
+        // .addTo(map);
       }
 
-      let final = populate.sort((a,b) => a.nummer - b.nummer)
+      function populateInputs(results) {
+        var specialer = new Set();
+        var enheder = new Set();
+        for (let i = 0; i < results.length; i++) {
+          const r = results[i];
+          specialer.add(r.speciale);
+          enheder.add(r.enhed);
+        }
 
-      let nummer = document.getElementById("input-nummer").value
-      final = filterNummer(final, nummer)
-      
-      let specialer = Array.from(document.getElementById("input-speciale").selectedOptions).map(o => o.label)
-      final = filterSpeciale(final, specialer)
+        const specialeSelect = document.getElementById("input-speciale");
+        [...specialer].sort().forEach((s) => addOption(specialeSelect, s));
 
-      let enheder = Array.from(document.getElementById("input-enhed").selectedOptions).map(o => o.label)
-      final = filterEnhed(final, enheder)
-
-      final.forEach(p => addResultRow(p));
-    }
-
-    function populateInputs(results) {
-      var specialer = new Set();
-      var enheder = new Set();
-      for (let i = 0; i < results.length; i++) {
-        const r = results[i];
-        specialer.add(r.speciale);
-        enheder.add(r.enhed);
+        const enhedSelect = document.getElementById("input-enhed");
+        [...enheder].sort().forEach((e) => addOption(enhedSelect, e));
       }
 
-      const specialeSelect = document.getElementById("input-speciale");
-      [...specialer].sort().forEach((s) => addOption(specialeSelect, s));
+      function populateTable(results) {
+        let inputYear = document.getElementById("input-year");
+        let collection = inputYear.selectedOptions;
 
-      const enhedSelect = document.getElementById("input-enhed");
-      [...enheder].sort().forEach((e) => addOption(enhedSelect, e));
-    }
+        let populate = [];
+        for (let i = 0; i < collection.length; i++) {
+          const element = collection[i];
+          populate = populate.concat(results[element.value]);
+        }
 
-    function populateTable(results) {
+        let sortedPopulate = populate.sort((a, b) => a.nummer - b.nummer);
 
-      let inputYear = document.getElementById("input-year");
-      let collection = inputYear.selectedOptions;
-
-      let populate = []
-      for (let i = 0; i < collection.length; i++) {
-        const element = collection[i];
-        populate = populate.concat(results[element.value])
+        populate.forEach((p) => addResultRow(p));
       }
 
-      let sortedPopulate = populate.sort((a,b) => a.nummer - b.nummer )
-      
-      populate.forEach(p => addResultRow(p));
-    }
+      function filterNummer(results, nummer) {
+        return results.filter((r) => r.nummer >= nummer);
+      }
 
-    function filterNummer(results, nummer) {
-      return results.filter(r => r.nummer >= nummer);
-    }
+      function filterSpeciale(results, specialer) {
+        return results.filter((r) => specialer.includes(r.speciale));
+      }
 
-    function filterSpeciale(results, specialer) {
-      return results.filter(r => specialer.includes(r.speciale));
-    }
+      function filterEnhed(results, enheder) {
+        return results.filter((r) => enheder.includes(r.enhed));
+      }
 
-    function filterEnhed(results, enheder) {
-      return results.filter(r => enheder.includes(r.enhed));
-    }
+      async function fetchResults() {
+        const results = [];
+        await fetch("KBU Forløb - Sommeren 2022 - Runde 29.json")
+          .then((r) => r.json())
+          .then((r) => results.push(r));
+        await fetch("KBU Forløb - Vinter 2022_2023 - Runde 30.json")
+          .then((r) => r.json())
+          .then((r) => results.push(r));
+        await fetch("KBU Forløb - Sommeren 2023 - Runde 31.json")
+          .then((r) => r.json())
+          .then((r) => results.push(r));
+        await fetch("KBU Forløb - Vinter 2023_2024 - Runde 32.json")
+          .then((r) => r.json())
+          .then((r) => results.push(r));
+        console.debug(results);
+        return results;
+      }
 
-    async function fetchResults() {
-      const results = []
-      await fetch("KBU Forløb - Sommeren 2022 - Runde 29.json").then((r) => r.json()).then(r => results.push(r));
-      await fetch("KBU Forløb - Vinter 2022_2023 - Runde 30.json").then((r) => r.json()).then(r => results.push(r));
-      await fetch("KBU Forløb - Sommeren 2023 - Runde 31.json").then((r) => r.json()).then(r => results.push(r));
-      await fetch("KBU Forløb - Vinter 2023_2024 - Runde 32.json").then((r) => r.json()).then(r => results.push(r));
-      console.debug(results);
-      return results;
-    }
+      async function fetchLocations() {
+        return await fetch("locations.json").then((r) => r.json());
+      }
 
-    function addResultRow(r) {
-      var nummer = document.createElement("span");
-      nummer.innerText = r.nummer;
-      var speciale = document.createElement("span");
-      speciale.innerText = r.speciale;
-      var enhed = document.createElement("span");
-      enhed.innerText = r.enhed;
-      var afdeling = document.createElement("span");
-      afdeling.innerText = r.afdeling;
+      function addResultRow(r) {
+        var nummer = document.createElement("span");
+        nummer.innerText = r.nummer;
+        var speciale = document.createElement("span");
+        speciale.innerText = r.speciale;
+        var enhed = document.createElement("span");
+        enhed.innerText = r.enhed;
+        var afdeling = document.createElement("span");
+        afdeling.innerText = r.afdeling;
 
-      const results = document.getElementById("results");
-      results.appendChild(nummer);
-      results.appendChild(speciale);
-      results.appendChild(enhed);
-      results.appendChild(afdeling);
-    }
+        const results = document.getElementById("results");
+        results.appendChild(nummer);
+        results.appendChild(speciale);
+        results.appendChild(enhed);
+        results.appendChild(afdeling);
+      }
 
-    function clearTable() {
-      var toBeRemoved = document
-        .getElementById("results")
-        .querySelectorAll("span:not(.table-header)");
-      toBeRemoved.forEach((tbr) => tbr.remove());
-    }
+      function clearTable() {
+        var toBeRemoved = document
+          .getElementById("results")
+          .querySelectorAll("span:not(.table-header)");
+        toBeRemoved.forEach((tbr) => tbr.remove());
+      }
 
-    function addOption(select, option) {
-      var child = document.createElement("option");
-      child.innerText = option;
-      select.appendChild(child);
-    }
-  </script>
-</body>
+      function addOption(select, option) {
+        var child = document.createElement("option");
+        child.innerText = option;
+        select.appendChild(child);
+      }
+    </script>
+  </body>
+</html>

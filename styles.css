@@ -7,27 +7,18 @@
   --accent-primary: #D4A373;
   --accent-secondary: #FAEDCD;
   --base: #FEFAE0;
+  --br: .6vmin;
 }
 
 body {
-    margin-top: 40px;
+    margin: 8vw;
 }
 
-body, input, select, option, span {
+body, input, select, option, span, #map {
     font-family: "Roboto";
 }
 
-.header > h1 {
-  padding-bottom: 2px;
-}
-
-.header > p {
-  font-weight: 300;
-  font-size: medium;
-}
-
 .wrapper {
-  margin: 0 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 20px;
@@ -37,19 +28,49 @@ body, input, select, option, span {
 .description,
 .selections,
 .map,
-.results {
+.results,
+#map {
   grid-column: 1 / -1;
+}
+
+#map {
+    height: 600px;
+    border-radius: var(--br);
 }
 
 .description {
   color: #00000050;
   margin-top: 0;
+  font-weight: 300;
+  font-size: medium;
 }
 
 h1,
 h2,
 p {
   margin: 0;
+}
+
+select {
+    margin: 0;
+    padding: 0;
+}
+
+select > option {
+    padding: var(--br);
+}
+
+label {
+    margin-left: 2px;
+}
+
+input {
+    margin: 0;
+    padding: var(--br);
+}
+
+input#input-submit {
+    padding: 0;
 }
 
 h1 {
@@ -79,7 +100,7 @@ h1 {
 .selection > select,
 .selection > input {
   border-color: var(--light-grey);
-  border-radius: 0.5vmin;
+  border-radius: var(--br);
   border: 1px;
   border-style: solid;
   border-color: var(--light-grey);
@@ -88,13 +109,17 @@ h1 {
 #input-submit {
     font-weight: 500;
 }
-
+/* 
 .selection > select > option,
 .selection > input,
 .selection > select {
   font-size: small;
   font-weight: 300;
   padding: 5px 0 5px 5px;
+} */
+ 
+select {
+
 }
 
 .selection > label {
@@ -103,18 +128,11 @@ h1 {
   font-weight: 500;
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
 .results {
   display: grid;
   grid-template-columns: repeat(4, auto);
   border: 1px;
-  border-radius: 0.5vmin;
+  border-radius: var(--br);
   border-style: solid;
   min-width: 400px;
   border-color: var(--light-grey);
