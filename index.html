@@ -6,227 +6,178 @@
     <title>Tidligere valg af KBU forløb</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <script src="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.js"></script>
-    <link
-      href="https://unpkg.com/maplibre-gl@^4.7.1/dist/maplibre-gl.css"
-      rel="stylesheet"
-    />
+    <script src="dist/maplibre-gl.js"></script>
+    <link href="dist/maplibre-gl.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "gradient-from": "#ff80b5",
+              "gradient-to": "#9089fc",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+
+      #map {
+        height: 600px;
+      }
+    </style>
+
+    <link href="dist/daisyui.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <div class="wrapper">
-      <div class="header">
-        <h1>Tidligere valg af KBU forløb</h1>
-        <p class="description">
-          Find ud af hvad dit nummer ville have givet af muligheder i tidligere
-          runder
+    <div class="isolate bg-white px-6 py-12 sm:py-16 md:px-16 lg:px-32">
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gradient-from to-gradient-to opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Tidligere valg af KBU forløb
+        </h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          Hvilke muligheder dit nummer havde givet dig
         </p>
       </div>
-      <div class="selections">
-        <div class="selection">
-          <label for="input-nummer">Nummer</label>
-          <input
-            id="input-nummer"
-            type="number"
-            min="1"
-            max="1000"
-            placeholder="1"
-          />
+      <div class="mx-auto mt-8 max-w-8xl sm:mt-10">
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 md:grid-cols-2 lg:grid-cols-4"
+        >
+          <div>
+            <label
+              for="input-nummer"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Nummer</label
+            >
+            <div class="mt-2.5">
+              <input
+                id="input-nummer"
+                type="number"
+                name="input-nummer"
+                value="1"
+                min="1"
+                max="1000"
+                class="h-36 text-center block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to text-2xl sm:leading-6"
+              />
+            </div>
+          </div>
+          <div>
+            <label
+              for="input-year"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >År</label
+            >
+            <div class="mt-2.5">
+              <select
+                id="input-year"
+                name="input-year"
+                multiple
+                class="h-36 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
+              >
+                <option value="3" selected>Vinteren 2023-2024</option>
+                <option value="2">Sommeren 2023</option>
+                <option value="1">Vinteren 2022-2023</option>
+                <option value="0">Sommeren 2022</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label
+              for="input-speciale"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Speciale</label
+            >
+            <div class="mt-2.5">
+              <select
+                id="input-speciale"
+                name="input-speciale"
+                multiple
+                class="block h-36 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
+              ></select>
+            </div>
+          </div>
+          <div>
+            <label
+              for="input-enhed"
+              class="block text-sm font-semibold leading-6 text-gray-900"
+              >Enhed</label
+            >
+            <div class="mt-2.5">
+              <select
+                id="input-enhed"
+                name="input-enhed"
+                multiple
+                class="block h-36 w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
+              ></select>
+            </div>
+          </div>
         </div>
-        <div class="selection">
-          <label for="input-year">År</label>
-          <select id="input-year" multiple>
-            <option value="0">Sommeren 2022</option>
-            <option value="1">Vinteren 2022-2023</option>
-            <option value="2">Sommeren 2023</option>
-            <option value="3">Vinteren 2023-2024</option>
-          </select>
-        </div>
-        <div class="selection">
-          <label for="input-speciale">Speciale</label>
-          <select id="input-speciale" multiple></select>
-        </div>
-        <div class="selection">
-          <label for="input-enhed">Enhed</label>
-          <select id="input-enhed" multiple></select>
-        </div>
-        <div class="selection">
-          <label for="input-submit"><br /></label>
-          <input id="input-submit" type="button" value="Søg" />
+        <div class="mt-10">
+          <button
+            id="input-submit"
+            type="button"
+            class="block w-full rounded-md bg-gradient-to px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gradient-from focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gradient-to"
+          >
+            Søg
+          </button>
         </div>
       </div>
-      <div id="map"></div>
-      <div class="results" id="results">
-        <span class="table-header">Nummer</span>
-        <span class="table-header">Speciale</span>
-        <span class="table-header">Enhed</span>
-        <span class="table-header">Afdeling</span>
+      <div class="mx-auto mt-4 sm:mt-8 rounded-md" id="map"></div>
+
+      <div class="overflow-x-auto mt-4 sm:mt-8 rounded-md">
+        <table class="table table-zebra">
+          <!-- head -->
+          <thead>
+            <tr>
+              <th>Nummer</th>
+              <th>Speciale</th>
+              <th>Enhed</th>
+              <th>Afdeling</th>
+            </tr>
+          </thead>
+          <tbody id="results"></tbody>
+        </table>
       </div>
     </div>
 
-    <script type="module">
-      var map = new maplibregl.Map({
-        container: "map", // container id
-        style:
-          "https://api.maptiler.com/maps/basic-v2/style.json?key=4oZhY3NiUFERNYdnnM6t", // style URL
-        center: [10.8, 56], // starting position [lng, lat]
-        zoom: 6.5, // starting zoom
-      });
-
-      const results = await fetchResults();
-      const locations = await fetchLocations();
-
-      var markers = [];
-
-      populateInputs(results.flat());
-
-      document.getElementById("input-submit").onclick = async () => {
-        clearTable();
-
-        let inputYear = document.getElementById("input-year");
-        let collection = inputYear.selectedOptions;
-
-        let populate = [];
-        for (let i = 0; i < collection.length; i++) {
-          const element = collection[i];
-          populate = populate.concat(results[element.value]);
-        }
-
-        let final = populate.sort((a, b) => a.nummer - b.nummer);
-
-        let nummer = document.getElementById("input-nummer").value;
-        final = filterNummer(final, nummer);
-
-        let specialer = Array.from(
-          document.getElementById("input-speciale").selectedOptions
-        ).map((o) => o.label);
-        final = filterSpeciale(final, specialer);
-
-        let enheder = Array.from(
-          document.getElementById("input-enhed").selectedOptions
-        ).map((o) => o.label);
-        final = filterEnhed(final, enheder);
-
-        final.forEach((p) => addResultRow(p));
-
-        markers.forEach((m) => m.remove());
-        enheder.forEach((e) => addMapMarker(e));
-      };
-
-      function addMapMarker(enhed) {
-        let location = locations.find((e) => e.enhed === enhed).result
-          .places[0];
-        console.debug(location);
-
-        const popup = new maplibregl.Popup({ }).setText(enhed);
-
-        let marker = new maplibregl.Marker({ color: "#33333390" })
-          .setLngLat([location.location.longitude, location.location.latitude])
-          .setPopup(popup)
-          .addTo(map);
-        markers.push(marker);
-
-        // new maplibregl.Marker()
-        // .setLngLat([10.1717607, 56.191843999999996])
-        // .addTo(map);
-      }
-
-      function populateInputs(results) {
-        var specialer = new Set();
-        var enheder = new Set();
-        for (let i = 0; i < results.length; i++) {
-          const r = results[i];
-          specialer.add(r.speciale);
-          enheder.add(r.enhed);
-        }
-
-        const specialeSelect = document.getElementById("input-speciale");
-        [...specialer].sort().forEach((s) => addOption(specialeSelect, s));
-
-        const enhedSelect = document.getElementById("input-enhed");
-        [...enheder].sort().forEach((e) => addOption(enhedSelect, e));
-      }
-
-      function populateTable(results) {
-        let inputYear = document.getElementById("input-year");
-        let collection = inputYear.selectedOptions;
-
-        let populate = [];
-        for (let i = 0; i < collection.length; i++) {
-          const element = collection[i];
-          populate = populate.concat(results[element.value]);
-        }
-
-        let sortedPopulate = populate.sort((a, b) => a.nummer - b.nummer);
-
-        populate.forEach((p) => addResultRow(p));
-      }
-
-      function filterNummer(results, nummer) {
-        return results.filter((r) => r.nummer >= nummer);
-      }
-
-      function filterSpeciale(results, specialer) {
-        return results.filter((r) => specialer.includes(r.speciale));
-      }
-
-      function filterEnhed(results, enheder) {
-        return results.filter((r) => enheder.includes(r.enhed));
-      }
-
-      async function fetchResults() {
-        const results = [];
-        await fetch("KBU Forløb - Sommeren 2022 - Runde 29.json")
-          .then((r) => r.json())
-          .then((r) => results.push(r));
-        await fetch("KBU Forløb - Vinter 2022_2023 - Runde 30.json")
-          .then((r) => r.json())
-          .then((r) => results.push(r));
-        await fetch("KBU Forløb - Sommeren 2023 - Runde 31.json")
-          .then((r) => r.json())
-          .then((r) => results.push(r));
-        await fetch("KBU Forløb - Vinter 2023_2024 - Runde 32.json")
-          .then((r) => r.json())
-          .then((r) => results.push(r));
-        console.debug(results);
-        return results;
-      }
-
-      async function fetchLocations() {
-        return await fetch("locations.json").then((r) => r.json());
-      }
-
-      function addResultRow(r) {
-        var nummer = document.createElement("span");
-        nummer.innerText = r.nummer;
-        var speciale = document.createElement("span");
-        speciale.innerText = r.speciale;
-        var enhed = document.createElement("span");
-        enhed.innerText = r.enhed;
-        var afdeling = document.createElement("span");
-        afdeling.innerText = r.afdeling;
-
-        const results = document.getElementById("results");
-        results.appendChild(nummer);
-        results.appendChild(speciale);
-        results.appendChild(enhed);
-        results.appendChild(afdeling);
-      }
-
-      function clearTable() {
-        var toBeRemoved = document
-          .getElementById("results")
-          .querySelectorAll("span:not(.table-header)");
-        toBeRemoved.forEach((tbr) => tbr.remove());
-      }
-
-      function addOption(select, option) {
-        var child = document.createElement("option");
-        child.innerText = option;
-        select.appendChild(child);
-      }
-    </script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="results.js"></script>
+    <script type="module" src="locations.js"></script>
   </body>
 </html>
