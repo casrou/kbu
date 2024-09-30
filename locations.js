@@ -4,8 +4,8 @@ var map = new maplibregl.Map({
   container: "map", // container id
   style:
     "https://api.maptiler.com/maps/basic-v2/style.json?key=4oZhY3NiUFERNYdnnM6t", // style URL
-  center: [10.8, 56], // starting position [lng, lat]
-  zoom: 6.5, // starting zoom
+  center: [10.8, 56.15], // starting position [lng, lat]
+  zoom: 5.5, // starting zoom
   cooperativeGestures: true,
   attributionControl: false,
 });

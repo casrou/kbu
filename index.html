@@ -9,31 +9,8 @@
     <script src="dist/maplibre-gl.js"></script>
     <link href="dist/maplibre-gl.css" rel="stylesheet" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "gradient-from": "#ff80b5",
-              "gradient-to": "#9089fc",
-            },
-          },
-        },
-      };
-    </script>
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .content-auto {
-          content-visibility: auto;
-        }
-      }
-
-      #map {
-        height: 600px;
-      }
-    </style>
-
+    <link href="output.css" rel="stylesheet">
+    
     <link href="dist/daisyui.min.css" rel="stylesheet" type="text/css" />
   </head>
 
@@ -158,7 +135,7 @@
           </button>
         </div>
       </div>
-      <div class="mx-auto mt-4 sm:mt-8 rounded-md" id="map"></div>
+      <div class="h-96 mx-auto mt-4 sm:mt-8 rounded-md" id="map"></div>
 
       <div class="overflow-x-auto mt-4 sm:mt-8 rounded-md">
         <table class="table table-zebra">

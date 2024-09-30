@@ -31,9 +31,11 @@ document.getElementById("input-submit").onclick = async () => {
     enheder
   );
 
-  filteredResults.forEach((r) => {
-    addResultRow(r);
-  });
+  filteredResults
+    .sort((a, b) => a.nummer - b.nummer)
+    .forEach((r) => {
+      addResultRow(r);
+    });
 
-  enheder.forEach((e) => addMapMarker(e));
+  enheder.filter(e => filteredResults.map(f => f.enhed).includes(e)).forEach((e) => addMapMarker(e));
 };
