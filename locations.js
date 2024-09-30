@@ -6,6 +6,8 @@ var map = new maplibregl.Map({
     "https://api.maptiler.com/maps/basic-v2/style.json?key=4oZhY3NiUFERNYdnnM6t", // style URL
   center: [10.8, 56], // starting position [lng, lat]
   zoom: 6.5, // starting zoom
+  cooperativeGestures: true,
+  attributionControl: false,
 });
 
 var markers = [];
@@ -19,9 +21,10 @@ async function addMapMarker(enhed) {
   let location = locations.find((e) => e.enhed === enhed).result.places[0];
   console.debug(location);
 
-  const popup = new maplibregl.Popup({}).setText(enhed);
+  const popup = new maplibregl.Popup({}).setHTML("<a target='_blank' href='https://www.google.dk/maps/search/" + encodeURIComponent(enhed) +"'>" + enhed + "</a>");
+  // const popup = new maplibregl.Popup({}).setText(enhed);
 
-  let marker = new maplibregl.Marker({ color: "#33333390" })
+  let marker = new maplibregl.Marker({ color: "#ff80b5" })
     .setLngLat([location.location.longitude, location.location.latitude])
     .setPopup(popup)
     .addTo(map);
