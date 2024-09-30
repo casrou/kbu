@@ -1,6 +1,8 @@
 import json
 import requests
 from thefuzz import process
+from rapidfuzz import fuzz
+
 
 FETCH = False
 
@@ -123,7 +125,7 @@ def main():
         }
 
         response = requests.request("POST", url, headers=headers, data=payload)
-        
+
         with open(EVALUERING_FILE, mode="w") as file:
             json.dump(response.json(), file, ensure_ascii=False)
 
@@ -139,7 +141,7 @@ def main():
                 afdeling = e["afdeling"]
                 enhed_afdelinger.add(EnhedAfdeling(enhed, afdeling))
                 # enhed_afdelinger.add(tuple(enhed, afdeling))
-    
+
     enhed_afdeling_evalueringer = []
     unknown = 0
     with open(EVALUERING_FILE) as file:
@@ -147,18 +149,43 @@ def main():
 
         for ea in enhed_afdelinger:
             evaluering = process.extractOne(
-                ea.afdeling, [x for x in evalueringData if x["sygehusNavn"].casefold() == ea.enhed.casefold()], extractUddannelsesstedNavn, score_cutoff=50
+                ea.afdeling,
+                [
+                    x
+                    for x in evalueringData
+                    if x["sygehusNavn"].casefold() == ea.enhed.casefold()
+                ],
+                extractUddannelsesstedNavn,
+                scorer=fuzz.token_ratio,
             )
             if evaluering:
-                enhed_afdeling_evalueringer.append({"enhed": ea.enhed, "afdeling": ea.afdeling, "evaluering": evaluering[0], "fuzzy_score": evaluering[1]})
+                enhed_afdeling_evalueringer.append(
+                    {
+                        "enhed": ea.enhed,
+                        "afdeling": ea.afdeling,
+                        "evaluering": evaluering[0],
+                        "fuzzy_score": evaluering[1],
+                    }
+                )
             else:
-                enhed_afdeling_evalueringer.append({"enhed": ea.enhed, "afdeling": ea.afdeling, "evaluering": None, "fuzzy_score": -1})
+                enhed_afdeling_evalueringer.append(
+                    {
+                        "enhed": ea.enhed,
+                        "afdeling": ea.afdeling,
+                        "evaluering": None,
+                        "fuzzy_score": -1,
+                    }
+                )
                 unknown += 1
-    
+
     print("unknown: " + str(unknown))
 
     with open("evalueringer.json", mode="w") as result_file:
-        json.dump(sorted(enhed_afdeling_evalueringer, key=lambda x:int(x["fuzzy_score"])), fp=result_file, ensure_ascii=False)
+        json.dump(
+            sorted(enhed_afdeling_evalueringer, key=lambda x: int(x["fuzzy_score"])),
+            fp=result_file,
+            ensure_ascii=False,
+        )
 
 
 def extractUddannelsesstedNavn(x):
@@ -166,6 +193,7 @@ def extractUddannelsesstedNavn(x):
         return x["uddannelsesstedNavn"]
     else:
         return x
+
 
 class EnhedAfdeling:
     def __init__(self, enhed, afdeling):
@@ -177,14 +205,160 @@ class EnhedAfdeling:
             return False
         return self.enhed == other.enhed and self.afdeling == other.afdeling
 
-
     def __hash__(self):
         return hash((self.enhed, self.afdeling))
 
     def __str__(self):
-        return json.dumps({"enhed": self.enhed, "afdeling": self.afdeling}, ensure_ascii=False)
+        return json.dumps(
+            {"enhed": self.enhed, "afdeling": self.afdeling}, ensure_ascii=False
+        )
 
     def __repr__(self):
         return self.__str__()
 
-main()
+
+# main()
+
+url = "https://stamdatakatalog-api-prod.azurewebsites.net/api/Evalueringsstatistik/sygehusForSelect/"
+
+payload = json.dumps(
+    {
+        "regionIds": [
+            "09f81f66-5166-44fb-a6c7-2bc6d551f1ca",
+            "7b004954-ff3e-4469-ab3f-bad145a2ee88",
+            "8bcf060f-f28f-405f-ab23-fb51391ca69c",
+            "00fc2b0f-9a66-44d9-b45f-c6b638c39cea",
+            "7e28dde8-05a1-4ed8-ac8c-90f5d26719f0",
+            "4433acdd-e5d9-4588-ba2c-9cda1cea811f",
+            "5c799b4a-8a0a-4bea-926e-7dd62393d396",
+        ],
+        "includeInactive": False,
+    }
+)
+headers = {
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0",
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Accept-Encoding": "gzip, deflate, br, zstd",
+    "Referer": "https://uddannelseslaege.dk/",
+    "content-type": "application/json",
+    "Origin": "https://uddannelseslaege.dk",
+    "Connection": "keep-alive",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "cross-site",
+    "Priority": "u=4",
+    "Cookie": "ARRAffinity=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b; ARRAffinitySameSite=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b",
+}
+
+response = requests.request("POST", url, headers=headers, data=payload)
+
+sygehuse_ids = json.loads(response.text)["data"]
+
+url = "https://stamdatakatalog-api-prod.azurewebsites.net/api/Evalueringsstatistik/specialerForSelect"
+
+payload = {}
+headers = {
+  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0',
+  'Accept': '*/*',
+  'Accept-Language': 'en-US,en;q=0.5',
+  'Accept-Encoding': 'gzip, deflate, br, zstd',
+  'Referer': 'https://uddannelseslaege.dk/',
+  'Origin': 'https://uddannelseslaege.dk',
+  'Connection': 'keep-alive',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'cross-site',
+  'Priority': 'u=4',
+  'Cookie': 'ARRAffinity=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b; ARRAffinitySameSite=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b'
+}
+
+response = requests.request("GET", url, headers=headers, data=payload)
+
+specialer_ids = json.loads(response.text)["data"]
+
+
+def extractText(x):
+    if isinstance(x, dict):
+        return x["text"]
+    else:
+        return x
+
+
+sygehuse = set()
+specialer = set()
+for f in FILES:
+    with open(f) as file:
+        elements = json.load(file)
+        for e in elements:
+            sygehus = e["enhed"]
+            # afdeling = e["afdeling"]
+            speciale = e["speciale"]
+
+            sygehuse.add(sygehus)
+            specialer.add(speciale)
+
+            sygehus_id =  [x for x in sygehuse_ids if sygehus.casefold() in x["text"].casefold()][0]["id"]
+            speciale_id = [x["id"] for x in specialer_ids if speciale.casefold() in x["text"].casefold()]
+
+            print()
+            # enheder.add(EnhedAfdeling(enhed, afdeling))
+            # enhed_afdelinger.add(tuple(enhed, afdeling))
+
+print()
+print("START")
+for ea in sygehuse:
+    sygehus_id = process.extractOne(ea.enhed, sygehuse_ids, extractText, score_cutoff=80)[0]["id"]
+
+    url = "https://stamdatakatalog-api-prod.azurewebsites.net/api/Evalueringsstatistik/afdelinger/"
+    payload = json.dumps(
+        {
+            "regionIds": [
+                "09f81f66-5166-44fb-a6c7-2bc6d551f1ca",
+                "7b004954-ff3e-4469-ab3f-bad145a2ee88",
+                "8bcf060f-f28f-405f-ab23-fb51391ca69c",
+                "00fc2b0f-9a66-44d9-b45f-c6b638c39cea",
+                "7e28dde8-05a1-4ed8-ac8c-90f5d26719f0",
+                "4433acdd-e5d9-4588-ba2c-9cda1cea811f",
+                "5c799b4a-8a0a-4bea-926e-7dd62393d396",
+            ],
+            "sygehusIds": [sygehus_id],
+            "includeInactive": False,
+        }
+    )
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:129.0) Gecko/20100101 Firefox/129.0",
+        "Accept": "*/*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Accept-Encoding": "gzip, deflate, br, zstd",
+        "Referer": "https://uddannelseslaege.dk/",
+        "content-type": "application/json",
+        "Origin": "https://uddannelseslaege.dk",
+        "Connection": "keep-alive",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "cross-site",
+        "Priority": "u=4",
+        "Cookie": "ARRAffinity=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b; ARRAffinitySameSite=6baab673920cdd72d5292ed70f53157373a58e78fa4d23722efa3ae6748c9e7b",
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload)
+
+    afdelinger = json.loads(response.text)["data"]
+
+    afdeling_id = process.extractOne(
+        ea.afdeling, afdelinger, extractText, score_cutoff=50
+    )
+
+    if afdeling_id is None:
+        print(
+            str(ea)
+            + " - "
+            + str(process.extractOne(ea.afdeling, afdelinger, extractText))
+        )
+
+    # afdeling_id2 = process.extract(f"({ea.afdeling} {ea.enhed})", afdelinger, extractText, scorer=fuzz.token_ratio)
+    # afdeling_id3 = process.extract(f"({ea.afdeling} {ea.enhed})", afdelinger, extractText, scorer=fuzz.partial_ratio)
+    # afdeling_id4 = process.extract(f"({ea.afdeling} {ea.enhed})", afdelinger, extractText, scorer=fuzz.QRatio)
+    # afdeling_id5 = process.extract(f"({ea.afdeling} {ea.enhed})", afdelinger, extractText, scorer=fuzz.ratio)
+    # print()
