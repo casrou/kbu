@@ -256,8 +256,8 @@ def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds):
 
     payload = json.dumps(
         {
-            "startDato": "30/09/2020",
-            "slutDato": "29/09/2024",
+            "startDato": "01/01/2022",
+            "slutDato": "01/01/2026",
             "specialeIds": [],
             "uddannelsestyper": [1],
             "includeInactive": False,
@@ -360,6 +360,31 @@ def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds):
     return json.loads(response.text)["data"]
 
 
+def fuzzy_select(query, processExtracts):
+    if len(processExtracts) == 0:
+        # If not matches return none
+        print("Unknown")
+        return None
+    # elif processExtracts[0][1] == 100:
+    #     # If 100 % match return that
+    #     return processExtracts[0][0]
+    else:
+        print(query, "?")
+        # List options and take user input
+        i = 0
+        for f in processExtracts:
+            print(f"\t{i}: {f}")
+            i += 1
+
+        choice = input("> ")
+        if choice == "break" or choice == "none":
+            return None
+        elif not choice:
+            choice = 0
+
+        return processExtracts[int(choice)][0]
+
+
 # Målet er at finde uddannelsesstedId for hvert enhed:afdeling par, der optræder i KBU forløb filerne
 # Løgn: Sygehus navnene er et 1-til-1 match med "enhed" navnene (i hvert fald case-insensitive)
 # Uddannelsesstednavn fra "afdeling" navn skal være manuelt verificeret (med fuzzy matching som hjælp)
@@ -389,19 +414,9 @@ if os.path.exists("enhed_sygehuse.json"):
         enhed_sygehuse = json.load(temp)
 else:
     for e in unikke_enheder():
-        fuzzy = process.extract(e, [x["text"] for x in alle_sygehuse])
-        if fuzzy[0][1] == 100:
-            match = fuzzy[0][0]
-        else:
-            print(e, "?")
-            i = 0
-            for f in fuzzy:
-                print(f"\t{i}: {f}")
-                i += 1
-            choice = input("> ")
-            if not choice:
-                choice = 0
-            match = fuzzy[int(choice)][0]
+        fuzzySygehus = process.extract(e, set([x["text"] for x in alle_sygehuse]))
+        match = fuzzy_select(e, fuzzySygehus)
+
         chosen_sygehus = [x for x in alle_sygehuse if x["text"] == match][0]
         enhed_sygehus = {
             "sygehus": chosen_sygehus["text"],
@@ -411,94 +426,55 @@ else:
         enhed_sygehuse[e] = enhed_sygehus
 
     with open("enhed_sygehuse.json", "w") as temp:
+        print(enhed_sygehuse)
         json.dump(enhed_sygehuse, temp, ensure_ascii=False)
 
-print(enhed_sygehuse)
-print()
-
-# afdeling_uddannelsessteder = []
-# cached_afdelinger = {}
-# for ea in enhed_afdelinger:
-#     print(list(enhed_afdelinger).index(ea), "/", len(enhed_afdelinger))
-#     if ea.enhed not in cached_afdelinger:
-#         sygehus_id = enhed_sygehuse[ea.enhed]["sygehusId"]
-#         afdelinger = afdelinger_fra_sygehus(sygehus_id)
-#         cached_afdelinger[ea.enhed] = afdelinger
-#     else:
-#         afdelinger = cached_afdelinger[ea.enhed]
-
-#     fuzzy = process.extract(
-#         ea.afdeling.split(" (")[0], [x["text"] for x in afdelinger], limit=100
-#     )
-#     if fuzzy[0][1] == 100:
-#         match = fuzzy[0][0]
-#     else:
-#         print(ea.afdeling, "?")
-#         i = 0
-#         for f in fuzzy:
-#             print(f"\t{i}: {f}")
-#             i += 1
-#         choice = input("> ")
-#         if choice == "break":
-#             break
-#         if not choice:
-#             choice = 0
-#         match = fuzzy[int(choice)][0]
-#     chosen_uddannelsessted = [x for x in afdelinger if x["text"] == match][0]
-#     afdeling_uddannelsessted = {
-#         "enhed": ea.enhed,
-#         "sygehus": enhed_sygehuse[ea.enhed],
-#         "afdeling": ea.afdeling,
-#         "uddannelsessted": chosen_uddannelsessted["text"],
-#         "uddannelsesstedId": chosen_uddannelsessted["id"],
-#     }
-
-#     print(ea.afdeling, afdeling_uddannelsessted)
-#     print()
-#     afdeling_uddannelsessteder.append(afdeling_uddannelsessted)
-
-# with open("temp.json", "w") as temp:
-#     json.dump(afdeling_uddannelsessteder, temp, ensure_ascii=False)
-
 afdeling_uddannelsessteder = []
-for ea in enhed_afdelinger[1:10]:
-    fuzzy = process.extract(
+for ea in enhed_afdelinger[1:100]:
+    fuzzySygehus = process.extract(
+        ea.enhed, set([x["sygehusNavn"] for x in alle_kbu_evalueringer])
+    )
+    sygehus = fuzzy_select(ea.enhed, fuzzySygehus)
+
+    fuzzyUddannelsessted = process.extract(
         ea.afdeling,
-        [
+        set([
             x["uddannelsesstedNavn"]
             for x in alle_kbu_evalueringer
-            if x["sygehusNavn"].replace(",", "").casefold()
-            == enhed_sygehuse[ea.enhed]["sygehus"].replace(",", "").casefold()
-        ],
+            if x["sygehusNavn"] == sygehus
+        ]),
         limit=100,
     )
-    if len(fuzzy) == 0:
-        print("Unknown", ea)
-        continue
-    elif fuzzy[0][1] == 100:
-        match = fuzzy[0][0]
-    else:
-        print(ea.afdeling, "?")
-        i = 0
-        for f in fuzzy:
-            print(f"\t{i}: {f}")
-            i += 1
-        choice = input("> ")
-        if choice == "break":
-            afdeling_uddannelsessted = {
-                "enhed": ea.enhed,
-                "sygehus": enhed_sygehuse[ea.enhed],
-                "afdeling": ea.afdeling,
-            }
-            print(afdeling_uddannelsessted)
-            print()
-            afdeling_uddannelsessteder.append(afdeling_uddannelsessted) 
-            break
-        elif not choice:
-            choice = 0
-        match = fuzzy[int(choice)][0]
+    match = fuzzy_select(f"{ea.afdeling} ({sygehus})", fuzzyUddannelsessted)
+
+    # if len(fuzzyUddannelsessted) == 0:
+    #     print("Unknown", ea)
+    #     continue
+    # elif fuzzyUddannelsessted[0][1] == 100:
+    #     match = fuzzyUddannelsessted[0][0]
+    # else:
+    #     print(ea.afdeling, "?")
+    #     i = 0
+    #     for f in fuzzyUddannelsessted:
+    #         print(f"\t{i}: {f}")
+    #         i += 1
+    #     choice = input("> ")
+    #     if choice == "break":
+    #         afdeling_uddannelsessted = {
+    #             "enhed": ea.enhed,
+    #             "sygehus": enhed_sygehuse[ea.enhed],
+    #             "afdeling": ea.afdeling,
+    #         }
+    #         print(afdeling_uddannelsessted)
+    #         print()
+    #         afdeling_uddannelsessteder.append(afdeling_uddannelsessted)
+    #         break
+    #     elif not choice:
+    #         choice = 0
+    #     match = fuzzyUddannelsessted[int(choice)][0]
     chosen_uddannelsessted = next(
-        x for x in alle_kbu_evalueringer if x["uddannelsesstedNavn"] == match
+        (x for x in alle_kbu_evalueringer if x["uddannelsesstedNavn"] == match),
+        {"uddannelsesstedNavn": None, "uddannelsesstedId": None},
     )
     afdeling_uddannelsessted = {
         "enhed": ea.enhed,
