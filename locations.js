@@ -19,10 +19,8 @@ async function fetchLocations() {
 async function addMapMarker(enhed) {
   let locations = await fetchLocations();
   let location = locations.find((e) => e.enhed === enhed).result.places[0];
-  console.debug(location);
 
   const popup = new maplibregl.Popup({}).setHTML("<a target='_blank' href='https://www.google.dk/maps/search/" + encodeURIComponent(enhed) +"'>" + enhed + "</a>");
-  // const popup = new maplibregl.Popup({}).setText(enhed);
 
   let marker = new maplibregl.Marker({ color: "#ff80b5" })
     .setLngLat([location.location.longitude, location.location.latitude])

@@ -8,6 +8,7 @@ const FILES = [
 ];
 
 const results = await fetchResults();
+const evaluations = await fetchEvaluations();
 
 function getFilteredResults(yearIndices, nummer, specialer, enheder) {
   let filteredResults = [];
@@ -47,6 +48,10 @@ async function fetchResults() {
   return await Promise.all(fetches);
 }
 
+async function fetchEvaluations() {
+  return await fetch("evalueringer.json").then((r) => r.json());
+}
+
 function addResultRow(r) {
   const results = document.getElementById("results");
   const tr = document.createElement("tr");
@@ -54,7 +59,26 @@ function addResultRow(r) {
   tr.appendChild(createTd(r.speciale));
   tr.appendChild(createTd(r.enhed));
   tr.appendChild(createTd(r.afdeling));
+  let evaluation = evaluations.find(
+    (e) => e.enhed === r.enhed && e.afdeling === r.afdeling
+  );
+  if (evaluation !== undefined && evaluation.evaluering) {
+    console.log(evaluation);
+    tr.appendChild(
+      createTd(avg(evaluation.evaluering.singleAverageScore) + " / 5")
+    );
+  } else {
+    tr.appendChild(createTd("?"));
+  }
   results.appendChild(tr);
+}
+
+function avg(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return (sum / array.length).toFixed(2);
 }
 
 function createTd(text) {
@@ -64,9 +88,7 @@ function createTd(text) {
 }
 
 function clearTable() {
-  var toBeRemoved = document
-    .getElementById("results")
-    .querySelectorAll("tr");
+  var toBeRemoved = document.getElementById("results").querySelectorAll("tr");
   toBeRemoved.forEach((tbr) => tbr.remove());
 }
 
