@@ -65,7 +65,7 @@ function addResultRow(r) {
   if (evaluation !== undefined && evaluation.evaluering) {
     console.log(evaluation);
     tr.appendChild(
-      createTd(avg(evaluation.evaluering.singleAverageScore) + " / 5")
+      createTd(avg(evaluation.evaluering.singleAverageScore) + " / 6")
     );
   } else {
     tr.appendChild(createTd("?"));
