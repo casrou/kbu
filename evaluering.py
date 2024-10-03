@@ -227,7 +227,10 @@ else:
 enhed_afdelinger = unikke_enhed_afdelinger()
 
 evalueringer = []
-for ea in random.choices(enhed_afdelinger, k=5):
+with open("evalueringer.json") as temp:
+    evalueringer = json.load(temp)
+
+for ea in random.choices([x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0], k=5):
     possibilities = []
     for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
         for uddannelsessted in set(
@@ -280,3 +283,5 @@ for ea in random.choices(enhed_afdelinger, k=5):
 
 with open("evalueringer.json", "w") as temp:
     json.dump(evalueringer, temp, ensure_ascii=False)
+
+print("Progress", f"{len(evalueringer)}/{len(enhed_afdelinger)}")
