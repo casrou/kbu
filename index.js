@@ -6,7 +6,25 @@ import {
   populateInputs,
 } from "./results.js";
 
+window.onerror = (e) => showError(e);
+
+// event is of type PromiseRejectionEvent
+window.addEventListener("unhandledrejection", (event) => {
+  event.preventDefault(); // This will not print the error in the console });
+
+  alert(event.reason)
+  document.getElementById("results").innerHTML = event.reason;
+
+});
+
+function showError(errorMsg, url, lineNumber) {
+  alert(errorMsg);//or any message
+  document.getElementById("results").innerHTML = errorMsg
+  return true;
+}
+
 await populateInputs();
+
 
 document.getElementById("input-submit").onclick = async () => {
   clearTable();
@@ -37,5 +55,5 @@ document.getElementById("input-submit").onclick = async () => {
       addResultRow(r);
     });
 
-  enheder.filter(e => filteredResults.map(f => f.enhed).includes(e)).forEach((e) => addMapMarker(e));
+  enheder.filter(e => filteredResults.map(f => f.enhed).includes(e)).forEach((e) => addMapMarker(e));  
 };
