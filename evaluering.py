@@ -230,58 +230,80 @@ evalueringer = []
 with open("evalueringer.json") as temp:
     evalueringer = json.load(temp)
 
-for ea in random.choices([x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0], k=5):
-    possibilities = []
-    for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
-        for uddannelsessted in set(
-            [
-                x["uddannelsesstedNavn"]
-                for x in alle_kbu_evalueringer
-                if x["sygehusNavn"] == sygehus
-            ]
-        ):
-            possibilities.append(
-                (
-                    uddannelsessted,
-                    sygehus,
-                    (
-                        fuzz.WRatio(ea.enhed, sygehus)
-                        + fuzz.WRatio(ea.afdeling, uddannelsessted)
-                    )
-                    / 2,
-                )
-            )
-    sortedPossibilities = sorted(possibilities, key=lambda x: x[2], reverse=True)
-    i = 0
-    sortedPossibilities.reverse()
-    for sp in sortedPossibilities:
-        print(len(sortedPossibilities) - i - 1, sp[0], sp[1])
-        i += 1
-    print()
-    print(ea.afdeling, ea.enhed)
-    choice = input("> ")
-    if not choice:
-        print("Ingen evalueringer fundet for", ea.afdeling, ea.enhed)
-        match = None
-    else:
-        temp = sortedPossibilities[len(sortedPossibilities) - int(choice) - 1]
-        match = next(
-            x
-            for x in alle_kbu_evalueringer
-            if x["uddannelsesstedNavn"] == temp[0] and x["sygehusNavn"] == temp[1]
-        )
 
-    afdeling_uddannelsessted = {
-        "enhed": ea.enhed,
-        "afdeling": ea.afdeling,
-        "evaluering": match,
-    }
+# clean up evalueringer
+no_duplicates = []
 
-    print(afdeling_uddannelsessted)
-    print()
-    evalueringer.append(afdeling_uddannelsessted)
+for e in evalueringer:
+    is_duplicate = next((x for x in no_duplicates if e["enhed"] == x["enhed"] and e["afdeling"] == x["afdeling"]), None) is not None
+    if not is_duplicate:
+        no_duplicates.append(e)
+
+print(len(evalueringer))
+print(len(no_duplicates))
 
 with open("evalueringer.json", "w") as temp:
-    json.dump(evalueringer, temp, ensure_ascii=False)
+    json.dump(no_duplicates, temp, ensure_ascii=False)
 
-print("Progress", f"{len(evalueringer)}/{len(enhed_afdelinger)}")
+exit(0)
+
+# missing = [x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0]
+
+# if len(missing) == 0:
+#     exit(0)
+
+# for ea in random.choices(missing):
+#     possibilities = []
+#     for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
+#         for uddannelsessted in set(
+#             [
+#                 x["uddannelsesstedNavn"]
+#                 for x in alle_kbu_evalueringer
+#                 if x["sygehusNavn"] == sygehus
+#             ]
+#         ):
+#             possibilities.append(
+#                 (
+#                     uddannelsessted,
+#                     sygehus,
+#                     (
+#                         fuzz.WRatio(ea.enhed, sygehus)
+#                         + fuzz.WRatio(ea.afdeling, uddannelsessted)
+#                     )
+#                     / 2,
+#                 )
+#             )
+#     sortedPossibilities = sorted(possibilities, key=lambda x: x[2], reverse=True)
+#     i = 0
+#     sortedPossibilities.reverse()
+#     for sp in sortedPossibilities:
+#         print(len(sortedPossibilities) - i - 1, sp[0], sp[1])
+#         i += 1
+#     print()
+#     print(ea.afdeling, ea.enhed)
+#     choice = input("> ")
+#     if not choice:
+#         print("Ingen evalueringer fundet for", ea.afdeling, ea.enhed)
+#         match = None
+#     else:
+#         temp = sortedPossibilities[len(sortedPossibilities) - int(choice) - 1]
+#         match = next(
+#             x
+#             for x in alle_kbu_evalueringer
+#             if x["uddannelsesstedNavn"] == temp[0] and x["sygehusNavn"] == temp[1]
+#         )
+
+#     afdeling_uddannelsessted = {
+#         "enhed": ea.enhed,
+#         "afdeling": ea.afdeling,
+#         "evaluering": match,
+#     }
+
+#     print(afdeling_uddannelsessted)
+#     print()
+#     evalueringer.append(afdeling_uddannelsessted)
+
+# with open("evalueringer.json", "w") as temp:
+#     json.dump(evalueringer, temp, ensure_ascii=False)
+
+# print("Progress", f"{len(evalueringer)}/{len(enhed_afdelinger)}")
