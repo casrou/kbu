@@ -50,7 +50,7 @@ def unikke_enhed_afdelinger():
     return list(enhed_afdelinger)
 
 
-def alle_afdelinger():
+def alle_afdelinger(inactive = False):
     import requests
     import json
 
@@ -69,7 +69,7 @@ def alle_afdelinger():
             ],
             "sygehusIds": [],
             "specialeIds": [],
-            "includeInactive": False,
+            "includeInactive": inactive,
         }
     )
     headers = {
@@ -93,7 +93,7 @@ def alle_afdelinger():
     return json.loads(response.text)["data"]
 
 
-def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds):
+def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds, inactive = False):
     import requests
     import json
 
@@ -105,7 +105,7 @@ def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds):
             "slutDato": "01/01/2026",
             "specialeIds": [],
             "uddannelsestyper": [1],
-            "includeInactive": False,
+            "includeInactive": inactive,
             "uddannelsesstedIds": uddannelsesstedIds,
         }
     )
@@ -212,13 +212,21 @@ def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds):
 # Eksempel:
 # {"enhed": "Aarhus Universitetshospital", "sygehusNavn": "Aarhus Universitetshospital", ("sygehusId": ""61bd65fb-d324-4fbb-b8ae-adbca6d3e746",) "afdeling": "Lungesygdomme", "uddannelsesstedNavn": "Lungesygdomme", "uddannelsesstedId": "36d4d506-bece-42f1-bd8e-d593b9fb78e2"}
 
+afdelinger = None
+if os.path.exists("afdelinger.json"):
+    with open("afdelinger.json") as temp:
+        afdelinger = json.load(temp)
+else:
+    afdelinger = alle_afdelinger(True)
+    with open("afdelinger.json", "w") as temp:
+        json.dump(afdelinger, temp, ensure_ascii=False)
+
 alle_kbu_evalueringer = None
 if os.path.exists("alle-kbu-evalueringer.json"):
     with open("alle-kbu-evalueringer.json") as temp:
         alle_kbu_evalueringer = json.load(temp)
 else:
-    alle_afdelinger = alle_afdelinger()
-    alle_afdelinger_ids = [a["id"] for a in alle_afdelinger]
+    alle_afdelinger_ids = [a["id"] for a in afdelinger]
     alle_kbu_evalueringer = kbu_evalueringer_for_uddannelsessteder(alle_afdelinger_ids)
 
     with open("alle-kbu-evalueringer.json", "w") as temp:
@@ -227,83 +235,83 @@ else:
 enhed_afdelinger = unikke_enhed_afdelinger()
 
 evalueringer = []
-with open("evalueringer.json") as temp:
-    evalueringer = json.load(temp)
-
+if os.path.exists("evalueringer.json"):
+    with open("evalueringer.json") as temp:
+        evalueringer = json.load(temp)
 
 # clean up evalueringer
-no_duplicates = []
+if False:
+    no_duplicates = []
 
-for e in evalueringer:
-    is_duplicate = next((x for x in no_duplicates if e["enhed"] == x["enhed"] and e["afdeling"] == x["afdeling"]), None) is not None
-    if not is_duplicate:
-        no_duplicates.append(e)
+    for e in evalueringer:
+        is_duplicate = next((x for x in no_duplicates if e["enhed"] == x["enhed"] and e["afdeling"] == x["afdeling"]), None) is not None
+        if not is_duplicate:
+            no_duplicates.append(e)
 
-print(len(evalueringer))
-print(len(no_duplicates))
+    print(len(evalueringer))
+    print(len(no_duplicates))
 
-with open("evalueringer.json", "w") as temp:
-    json.dump(no_duplicates, temp, ensure_ascii=False)
+    with open("evalueringer.json", "w") as temp:
+        json.dump(no_duplicates, temp, ensure_ascii=False)
 
-exit(0)
 
-# missing = [x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0]
+def missing():
+    return [x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0 or len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling and y["evaluering"] is None]) > 0]
 
-# if len(missing) == 0:
-#     exit(0)
+while len(missing()) > 0    :
+    for ea in random.choices(missing()):
+        possibilities = []
+        for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
+            for uddannelsessted in set(
+                [
+                    x["uddannelsesstedNavn"]
+                    for x in alle_kbu_evalueringer
+                    if x["sygehusNavn"] == sygehus
+                ]
+            ):
+                possibilities.append(
+                    (
+                        uddannelsessted,
+                        sygehus,
+                        (
+                            fuzz.WRatio(ea.enhed, sygehus)
+                            + fuzz.WRatio(ea.afdeling, uddannelsessted)
+                        )
+                        / 2,
+                    )
+                )
+        sortedPossibilities = sorted(possibilities, key=lambda x: x[2], reverse=True)
+        i = 0
+        sortedPossibilities.reverse()
+        for sp in sortedPossibilities:
+            print(len(sortedPossibilities) - i - 1, sp[0], sp[1])
+            i += 1
+        print()
+        print(ea.afdeling, ea.enhed)
+        choice = input("> ")
+        if not choice:
+            print("Ingen evalueringer fundet for", ea.afdeling, ea.enhed)
+            match = None
+        else:
+            temp = sortedPossibilities[len(sortedPossibilities) - int(choice) - 1]
+            match = next(
+                x
+                for x in alle_kbu_evalueringer
+                if x["uddannelsesstedNavn"] == temp[0] and x["sygehusNavn"] == temp[1]
+            )
 
-# for ea in random.choices(missing):
-#     possibilities = []
-#     for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
-#         for uddannelsessted in set(
-#             [
-#                 x["uddannelsesstedNavn"]
-#                 for x in alle_kbu_evalueringer
-#                 if x["sygehusNavn"] == sygehus
-#             ]
-#         ):
-#             possibilities.append(
-#                 (
-#                     uddannelsessted,
-#                     sygehus,
-#                     (
-#                         fuzz.WRatio(ea.enhed, sygehus)
-#                         + fuzz.WRatio(ea.afdeling, uddannelsessted)
-#                     )
-#                     / 2,
-#                 )
-#             )
-#     sortedPossibilities = sorted(possibilities, key=lambda x: x[2], reverse=True)
-#     i = 0
-#     sortedPossibilities.reverse()
-#     for sp in sortedPossibilities:
-#         print(len(sortedPossibilities) - i - 1, sp[0], sp[1])
-#         i += 1
-#     print()
-#     print(ea.afdeling, ea.enhed)
-#     choice = input("> ")
-#     if not choice:
-#         print("Ingen evalueringer fundet for", ea.afdeling, ea.enhed)
-#         match = None
-#     else:
-#         temp = sortedPossibilities[len(sortedPossibilities) - int(choice) - 1]
-#         match = next(
-#             x
-#             for x in alle_kbu_evalueringer
-#             if x["uddannelsesstedNavn"] == temp[0] and x["sygehusNavn"] == temp[1]
-#         )
+        afdeling_uddannelsessted = {
+            "enhed": ea.enhed,
+            "afdeling": ea.afdeling,
+            "evaluering": match,
+        }
 
-#     afdeling_uddannelsessted = {
-#         "enhed": ea.enhed,
-#         "afdeling": ea.afdeling,
-#         "evaluering": match,
-#     }
+        print(afdeling_uddannelsessted)
+        print()
+        evalueringer = [x for x in evalueringer if not (x["enhed"] == ea.enhed and x["afdeling"] == ea.afdeling)]
+        evalueringer.append(afdeling_uddannelsessted)
 
-#     print(afdeling_uddannelsessted)
-#     print()
-#     evalueringer.append(afdeling_uddannelsessted)
+    with open("evalueringer.json", "w") as temp:
+        json.dump(evalueringer, temp, ensure_ascii=False)
 
-# with open("evalueringer.json", "w") as temp:
-#     json.dump(evalueringer, temp, ensure_ascii=False)
-
-# print("Progress", f"{len(evalueringer)}/{len(enhed_afdelinger)}")
+    print("Progress", f"{len(enhed_afdelinger) - len(missing())}/{len(enhed_afdelinger)}")
