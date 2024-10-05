@@ -8,15 +8,15 @@ const FILES = [
   "KBU Forløb - Vinter 2023_2024 - Runde 32.json",
 ];
 
-const results = await fetchResults();
+const results = fetchResults();
 const evaluations = await fetchEvaluations();
 
-function getFilteredResults(yearIndices, nummer, specialer, enheder) {
+async function getFilteredResults(yearIndices, nummer, specialer, enheder) {
   let filteredResults = [];
 
   for (let i = 0; i < yearIndices.length; i++) {
     const element = yearIndices[i];
-    filteredResults = filteredResults.concat(results[element.value]);
+    filteredResults = filteredResults.concat((await results)[element.value]);
   }
 
   return filteredResults.filter(
@@ -29,7 +29,7 @@ function getFilteredResults(yearIndices, nummer, specialer, enheder) {
 
 async function populateInputs() {
   info("Populating inputs");
-  let resultsCombined = results.flat();
+  let resultsCombined = (await results).flat();
   info("Get results");
   var specialer = new Set();
   var enheder = new Set();

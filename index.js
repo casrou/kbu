@@ -20,7 +20,7 @@ function showError(errorMsg, url, lineNumber) {
   return true;
 }
 
-populateInputs();
+await populateInputs();
 
 document.getElementById("input-submit").onclick = async () => {
   clearTable();
@@ -38,7 +38,7 @@ document.getElementById("input-submit").onclick = async () => {
   let inputEnhed = document.getElementById("input-enhed");
   let enheder = Array.from(inputEnhed.selectedOptions).map((o) => o.label);
 
-  let filteredResults = getFilteredResults(
+  let filteredResults = await getFilteredResults(
     yearIndices,
     nummer,
     specialer,
