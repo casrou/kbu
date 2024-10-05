@@ -1,3 +1,4 @@
+import { info } from "./logging.js";
 export { clearTable, getFilteredResults, addResultRow, populateInputs };
 
 const FILES = [
@@ -26,8 +27,10 @@ function getFilteredResults(yearIndices, nummer, specialer, enheder) {
   );
 }
 
-function populateInputs() {
+async function populateInputs() {
+  info("Populating inputs");
   let resultsCombined = results.flat();
+  info("Get results");
   var specialer = new Set();
   var enheder = new Set();
   for (let i = 0; i < resultsCombined.length; i++) {
@@ -41,11 +44,15 @@ function populateInputs() {
 
   const enhedSelect = document.getElementById("input-enhed");
   [...enheder].sort().forEach((e) => addOption(enhedSelect, e));
+  info("Added options");
 }
 
 async function fetchResults() {
+  info("Fetching results");
   let fetches = FILES.map((f) => fetch(f).then((r) => r.json()));
-  return await Promise.all(fetches);
+  let results = await Promise.all(fetches);
+  info("Fetched results");
+  return results;
 }
 
 async function fetchEvaluations() {
