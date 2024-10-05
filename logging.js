@@ -1,6 +1,9 @@
 export { info, error };
 
+const LOGGING_ENABLED = false;
+
 function info(error) {
+  if (!LOGGING_ENABLED) return;
   let li = document.createElement("li");
   // let span = document.createElement("span")
   let text = document.createTextNode(error);
@@ -14,6 +17,7 @@ function info(error) {
 }
 
 function error(errorMsg) {
+  if (!LOGGING_ENABLED) return;
   alert(errorMsg);
   document.getElementById("results").innerHTML = errorMsg;
 }
