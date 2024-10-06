@@ -1,0 +1,470 @@
+[
+  { "enhed": "OUH Svendborg Sygehus", "afdeling": "Ortopædkir. afd. O" },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Kirurgisk afd."
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Ortopædkirurgisk afd. T"
+  },
+  { "enhed": "Hospitalsenhed Midt", "afdeling": "Neurologi" },
+  { "enhed": "Sygehus Lillebælt Kolding", "afdeling": "Organkirurgi" },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "AMH, Afdeling for Medicinske Sygdomme"
+  },
+  {
+    "enhed": "Aarhus Universitetshospital",
+    "afdeling": "Mave- og Tarmkirurgi "
+  },
+  { "enhed": "OUH Svendborg Sygehus", "afdeling": "Ortopædkirurgisk afd. O" },
+  {
+    "enhed": "Landssjúkrahúsið, Torshavn, Færøerne",
+    "afdeling": "Medicinsk afdeling"
+  },
+  { "enhed": "Holbæk Sygehus", "afdeling": "Medicinsk afd. " },
+  { "enhed": "Regionshospitalet Gødstrup", "afdeling": "Akutafdelingen" },
+  {
+    "enhed": "Sydvestjysk Sygehus Esbjerg",
+    "afdeling": "Fælles Medicinske afdelinger"
+  },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Lungemed. afd. J"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Lungemedicinsk og Endokrinologisk afd., Lungemedicinsk afsnit."
+  },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Infektionsmed. Afd."
+  },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Neurologisk afd. N"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Lungemedicinsk afd."
+  },
+  {
+    "enhed": "Hospitalsenheden Horsens",
+    "afdeling": "Medicinsk Afdeling, Overafdeling"
+  },
+  { "enhed": "Nykøbing F. Sygehus", "afdeling": "Akutafdeling" },
+  {
+    "enhed": "NordSjællands Hospital",
+    "afdeling": "HIL, Ortopædkirurgisk Afdeling"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Ortopædkirurgisk afd. M"
+  },
+  { "enhed": "Hospitalsenheden Horsens", "afdeling": "Kirurgi, Overafdeling" },
+  { "enhed": "Hospitalsenhed Midt", "afdeling": "Akutafdelingen" },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "GEH, Medicinsk afd. C"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Hjerteafdeling Y"
+  },
+  {
+    "enhed": "Nordsjællands Hospital",
+    "afdeling": "Lunge- og infektionsmed. afd., Hillerød"
+  },
+  { "enhed": "Rigshospitalet", "afdeling": "GLO, Medicinsk afd., MG" },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Nyremed. Afd" },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Endokrinologisk afd. I"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Lungemedicinsk og Endokrinologisk afd., Endokrinologisk afsnit"
+  },
+  { "enhed": "OUH Svendborg Sygehus", "afdeling": "Medicinsk afd. M" },
+  {
+    "enhed": "Sydvestjysk Sygehus Esbjerg",
+    "afdeling": "Mave- og Tarmsygdomme"
+  },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": " Lungesygdomme" },
+  { "enhed": "Regionshospitalet Gødstrup", "afdeling": "Ortopædkirurgi  " },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Medicinsk afd. 1"
+  },
+  { "enhed": "OUH Svendborg Sygehus", "afdeling": "Kirurgisk afd. A" },
+  { "enhed": "Regionshospitalet Gødstrup", "afdeling": "Urinvejskirurgi  " },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Geriatrisk afd. G"
+  },
+  {
+    "enhed": "Sygehus Sønderjylland Sønderborg",
+    "afdeling": "Medicinske Sygdomme"
+  },
+  { "enhed": "Regionshospital Nordjylland", "afdeling": "Akutmodtagelsen" },
+  {
+    "enhed": "Regionshospitalet Randers",
+    "afdeling": "Ortopædkirurgi - Randers"
+  },
+  { "enhed": "Regionshospitalet Gødstrup", "afdeling": "Mave- og Tarmkirurgi" },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Hæmatologisk Afd." },
+  {
+    "enhed": "Sjællands Universitetshospital",
+    "afdeling": "KOE, Kirurgisk afd."
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Abdominalcenter K, medicinsk"
+  },
+  {
+    "enhed": "Rigshospitalet",
+    "afdeling": "GLO, Afdeling for Hjerne- og Nervesygdomme"
+  },
+  { "enhed": "Hospitalsenhed Midt", "afdeling": "Diagnostisk Center Medicin" },
+  { "enhed": "Holbæk Sygehus", "afdeling": "Ortopædkirurgisk afd." },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Neurologisk afd. N"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Medicinske Sygdomme"
+  },
+  { "enhed": "NordSjællands Hospital", "afdeling": "HIL, Kirurgisk Afdeling" },
+  {
+    "enhed": "NordSjællands Hospital",
+    "afdeling": "HIL, Lunge- og Infektionsmedicinsk Afdeling"
+  },
+  {
+    "enhed": "Landssjúkrahúsið, Torshavn, Færøerne",
+    "afdeling": "Kirurgisk Afdeling"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "GEH, Afdeling for Medicinske Sygdomme"
+  },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Medicinsk afd." },
+  { "enhed": "Sygehus Lillebælt Kolding", "afdeling": "Hjertesygdomme" },
+  { "enhed": "Bornholms Hospital", "afdeling": "BOH, Afdeling for Kirurgi" },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Medicinsk mavetarm afd. S"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Kardiologisk afd. Y"
+  },
+  {
+    "enhed": "Regionshospitalet Gødstrup",
+    "afdeling": "Neurologisk Klinik Gødstrup "
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Gastroenheden, Kirurgisk"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Afdeling for medicinske sygdomme, Endokrinologisk afsnit"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Gastroenheden, kirurgisk"
+  },
+  { "enhed": "Sygehus Lillebælt Vejle", "afdeling": "Medicinsk afd." },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Medicinsk afd. O"
+  },
+  { "enhed": "Sygehus Lillebælt Kolding", "afdeling": "Ortopædkirurgi" },
+  {
+    "enhed": "Regionshospitalet Randers",
+    "afdeling": "Mave- og Tarmkirurgi - Randers "
+  },
+  { "enhed": "Regionshospital Nordjylland", "afdeling": "Kir. Område" },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Urinvejskirurgi" },
+  {
+    "enhed": "Aarhus Universitetshospital",
+    "afdeling": "Hormon og Knoglesygdomme"
+  },
+  {
+    "enhed": "NordSjællands Hospital",
+    "afdeling": "HIL, Neurologisk Afdeling"
+  },
+  { "enhed": "Amager og Hvidovre Hospital", "afdeling": "AMH, Medicinsk afd." },
+  {
+    "enhed": "Nordsjællands Hospital",
+    "afdeling": "Endokrinologisk og Nefrologisk afd., Hillerød"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Mave-, Tarm- og Leversygdomme, Medicinsk Klinik"
+  },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Kir. Afd, afsnit syd, Aalborg"
+  },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Akutafdeling"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Neurologisk afd. N"
+  },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Ortopædkirurgisk afd."
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Infektionsmedicinsk Afdeling"
+  },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Lungemed. Afd." },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Medicinsk afd. 3 - neurologisk afs."
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Neurologisk Afdeling"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Afdeling for medicinske sygdomme, Lungemedicinsk afsnit."
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Urinvejssygdomme"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Led- og Knoglekirurgi"
+  },
+  { "enhed": "Sygehus Lillebælt Vejle", "afdeling": "Hjertemed. afd." },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Ortopædkirurgisk afd."
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Gastroenheden, kirurgisk afsnit"
+  },
+  { "enhed": "Holbæk Sygehus", "afdeling": "Kirurgisk afd." },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Infektionssygdomme" },
+  {
+    "enhed": "Hospitalsenheden Horsens",
+    "afdeling": "Akutafdelingen, Overafdeling"
+  },
+  {
+    "enhed": "Sjællands Universitetshospital",
+    "afdeling": "KOE, Akutafdeling"
+  },
+  { "enhed": "Sygehus Lillebælt Vejle", "afdeling": "Ortopædkir. afd." },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Ortopædkirurgisk afd., Hjørring"
+  },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Akutafdeling" },
+  {
+    "enhed": "Nordsjællands Hospital",
+    "afdeling": "Kardiologisk afd., Hillerød"
+  },
+  { "enhed": "Nykøbing F. Sygehus", "afdeling": "Medicinsk afd." },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Urologisk Afd." },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Hjerne- og Nervesygdomme"
+  },
+  {
+    "enhed": "Sjællands Universitetshospital",
+    "afdeling": "ROS, Neurologisk afd."
+  },
+  { "enhed": "Holbæk Sygehus", "afdeling": "Akutafdeling" },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Urologisk afd. H"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Ortopædkirurgisk Afdeling M"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Abdominalcenter K, kirurgisk"
+  },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Neurologisk Afdeling N"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "AMH, Afdeling for medicinske sygdomme"
+  },
+  { "enhed": "Sygehus Lillebælt Vejle", "afdeling": "Hjertesygdomme" },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Fælles Akutmodtagelse FAM"
+  },
+  { "enhed": "Regionshospitalet Gødstrup", "afdeling": "Medicinsk Afdeling" },
+  {
+    "enhed": "Sydvestjysk Sygehus Esbjerg",
+    "afdeling": "Hjerne- og Nervesygdomme"
+  },
+  {
+    "enhed": "NordSjællands Hospital",
+    "afdeling": "HIL, Endokrinologisk og Nefrologisk Afdeling"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Ortopædkirurgisk Afdeling"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Infektionsmedicinsk afd."
+  },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Endokrinologisk Afd."
+  },
+  { "enhed": "Sydvestjysk Sygehus Esbjerg", "afdeling": "Urinvejskirurgi" },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Medicinsk afd. 2 - endokrinologisk afs."
+  },
+  { "enhed": "Sygehus Lillebælt Vejle", "afdeling": "Urologisk afd." },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Blodsygdomme" },
+  { "enhed": "Hospitalsenhed Midt", "afdeling": "Medicinsk Afdeling" },
+  {
+    "enhed": "Sygehus Sønderjylland Aabenraa",
+    "afdeling": "Fælles Akut Modtagelse"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Abdominalcenter K, Medicinsk"
+  },
+  { "enhed": "Aarhus Universitetshospital", "afdeling": "Nyresygdomme" },
+  { "enhed": "Nordsjællands Hospital", "afdeling": "Kirurgisk Afd., Hillerød" },
+  {
+    "enhed": "Sjællands Universitetshospital",
+    "afdeling": "ROS, Urologisk afd."
+  },
+  { "enhed": "Bornholms Hospital", "afdeling": "Medicinsk afd." },
+  { "enhed": "Sygehus Sønderjylland Aabenraa", "afdeling": "Kirurgi" },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Ortopædkir. afd. O"
+  },
+  { "enhed": "Nykøbing F. Sygehus", "afdeling": "Ortopædkirurgisk afd." },
+  { "enhed": "Sygehus Sønderjylland Aabenraa", "afdeling": "Ortopædkirurgi" },
+  {
+    "enhed": "NordSjællands Hospital",
+    "afdeling": "HIL, Kardiologisk Afdeling"
+  },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Ortopædkirurgisk Afd., Aalborg"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Hjertemedicinsk afd."
+  },
+  {
+    "enhed": "Aarhus Universitetshospital",
+    "afdeling": "Lever-, Mave- og Tarmsygdomme"
+  },
+  {
+    "enhed": "Regionshospitalet Randers",
+    "afdeling": "Akutafdelingen - Randers"
+  },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Gastroenheden, medicinsk afsnit"
+  },
+  { "enhed": "Rigshospitalet", "afdeling": "GLO, Neurologisk klinik" },
+  {
+    "enhed": "Sygehus Lillebælt Vejle",
+    "afdeling": "Urinvejskirurgis afdeling"
+  },
+  {
+    "enhed": "Sygehus Lillebælt Kolding",
+    "afdeling": "Hjerne- og Nervesygdomme"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Abdominalcenter K, Kirurgisk"
+  },
+  {
+    "enhed": "Nordsjællands Hospital",
+    "afdeling": "Neurologisk afd., Hillerød"
+  },
+  {
+    "enhed": "Sygehus Sønderjylland Aabenraa",
+    "afdeling": "Medicinske Sygdomme"
+  },
+  {
+    "enhed": "Bispebjerg og Frederiksberg Hospital",
+    "afdeling": "BBH, Afdeling for Lunge- og Infektionssygdomme"
+  },
+  { "enhed": "NordSjællands Hospital", "afdeling": "HIL, Akutafdelingen" },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Med. Gastro. Afd." },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Geriatrisk afd. G"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Afdeling for Medicinske Sygdomme, Lungemedicinsk Sektion"
+  },
+  { "enhed": "Aalborg Universitetshospital", "afdeling": "Neurologisk Afd." },
+  {
+    "enhed": "Bornholms Hospital",
+    "afdeling": "BOH, Afdeling for Medicinske Sygdomme"
+  },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Afdeling for Hjerte- og Medicinske Sygdomme"
+  },
+  {
+    "enhed": "Næstved, Slagelse og Ringsted Sygehuse",
+    "afdeling": "SLA, Medicinsk afd. 3 - geriatrisk afs."
+  },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Hjertemed. afd. B"
+  },
+  { "enhed": "Bornholms Hospital", "afdeling": "Kirurgisk afd." },
+  {
+    "enhed": "Amager og Hvidovre Hospital",
+    "afdeling": "HVH, Afdeling for Medicinske Sygdomme, Endokrinologisk Sektion"
+  },
+  {
+    "enhed": "Nordsjællands Hospital",
+    "afdeling": "Ortopædkirurgisk afd., Hillerød"
+  },
+  { "enhed": "Nordsjællands Hospital", "afdeling": "Akutafdelingen, Hillerød" },
+  {
+    "enhed": "OUH Odense Universitetshospital",
+    "afdeling": "Kirurgisk afd. A"
+  },
+  { "enhed": "Sygehus Lillebælt Kolding", "afdeling": "Medicinske sygdomme" },
+  {
+    "enhed": "Aalborg Universitetshospital - Thisted",
+    "afdeling": "Medicinsk afd."
+  },
+  {
+    "enhed": "Aalborg Universitetshospital",
+    "afdeling": "Akut- og Traumecenter"
+  },
+  { "enhed": "Sydvestjysk Sygehus Esbjerg", "afdeling": "Ortopædkirurgi" },
+  { "enhed": "Sygehus Sønderjylland Aabenraa", "afdeling": "Hjertesygdomme" },
+  {
+    "enhed": "Herlev og Gentofte Hospital",
+    "afdeling": "HEH, Afdeling for Mave-, Tarm- og Leversygdomme, Kirurgisk Klinik"
+  }
+]

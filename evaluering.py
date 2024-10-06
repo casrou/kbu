@@ -47,10 +47,15 @@ def unikke_enhed_afdelinger():
                 enhed = e["enhed"]
                 afdeling = e["afdeling"]
                 enhed_afdelinger.add(EnhedAfdeling(enhed, afdeling))
+
+    if not os.path.exists("enhed_afdelinger.json"):
+        with open("enhed_afdelinger.json", "w") as temp:
+            json.dump(list([x.__dict__ for x in enhed_afdelinger]), temp, ensure_ascii=False)
+    
     return list(enhed_afdelinger)
 
 
-def alle_afdelinger(inactive = False):
+def alle_afdelinger(inactive=False):
     import requests
     import json
 
@@ -93,7 +98,7 @@ def alle_afdelinger(inactive = False):
     return json.loads(response.text)["data"]
 
 
-def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds, inactive = False):
+def kbu_evalueringer_for_uddannelsessteder(uddannelsesstedIds, inactive=False):
     import requests
     import json
 
@@ -244,7 +249,17 @@ if False:
     no_duplicates = []
 
     for e in evalueringer:
-        is_duplicate = next((x for x in no_duplicates if e["enhed"] == x["enhed"] and e["afdeling"] == x["afdeling"]), None) is not None
+        is_duplicate = (
+            next(
+                (
+                    x
+                    for x in no_duplicates
+                    if e["enhed"] == x["enhed"] and e["afdeling"] == x["afdeling"]
+                ),
+                None,
+            )
+            is not None
+        )
         if not is_duplicate:
             no_duplicates.append(e)
 
@@ -256,9 +271,31 @@ if False:
 
 
 def missing():
-    return [x for x in enhed_afdelinger if len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling]) == 0 or len([y for y in evalueringer if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling and y["evaluering"] is None]) > 0]
+    return [
+        x
+        for x in enhed_afdelinger
+        if len(
+            [
+                y
+                for y in evalueringer
+                if y["enhed"] == x.enhed and y["afdeling"] == x.afdeling
+            ]
+        )
+        == 0
+        or len(
+            [
+                y
+                for y in evalueringer
+                if y["enhed"] == x.enhed
+                and y["afdeling"] == x.afdeling
+                and y["evaluering"] is None
+            ]
+        )
+        > 0
+    ]
 
-while len(missing()) > 0    :
+
+while len(missing()) > 0:
     for ea in random.choices(missing()):
         possibilities = []
         for sygehus in set([x["sygehusNavn"] for x in alle_kbu_evalueringer]):
@@ -308,10 +345,16 @@ while len(missing()) > 0    :
 
         print(afdeling_uddannelsessted)
         print()
-        evalueringer = [x for x in evalueringer if not (x["enhed"] == ea.enhed and x["afdeling"] == ea.afdeling)]
+        evalueringer = [
+            x
+            for x in evalueringer
+            if not (x["enhed"] == ea.enhed and x["afdeling"] == ea.afdeling)
+        ]
         evalueringer.append(afdeling_uddannelsessted)
 
     with open("evalueringer.json", "w") as temp:
         json.dump(evalueringer, temp, ensure_ascii=False)
 
-    print("Progress", f"{len(enhed_afdelinger) - len(missing())}/{len(enhed_afdelinger)}")
+    print(
+        "Progress", f"{len(enhed_afdelinger) - len(missing())}/{len(enhed_afdelinger)}"
+    )

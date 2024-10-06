@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistik over tidligere valg af KBU forløb</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+
+    <link href="../output.css" rel="stylesheet" />
+
+    <link href="../dist/daisyui.min.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="px-6">
+      <canvas id="myChart"></canvas>
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module">
+      const ctx = document.getElementById("myChart");
+
+      let evaluations = await fetch("../evalueringer.json").then((r) =>
+        r.json()
+      );
+
+      evaluations = Array.from(evaluations).sort(
+        (a, b) =>
+          avg(a.evaluering?.singleAverageScore) -
+          avg(b.evaluering?.singleAverageScore)
+      );
+
+      //   let enhed_afdelinger = new Set();
+      //   for (const e in evaluations) {
+      //     const element = evaluations[e];
+      //     console.log(element);
+      //     console.log(element.enhed);
+      //     console.log(element.afdeling);
+
+      //     enhed_afdelinger.add({
+      //       enhed: element.enhed,
+      //       afdeling: element.afdeling,
+      //     });
+      //   }
+
+      // let scores = []
+      // for (const ea in enhed_afdelinger) {
+      //     const element = enhed_afdelinger[ea];
+
+      //     evaluations.find(e => e.enhed === ea.enhed )
+      //     let evaluation = undefined
+      //     for (const e in evalutions) {
+      //         const ee = evalutions[e];
+      //         if (ee.sygehus === ea)
+      //     }
+
+      // }
+
+      function avg(array) {
+        if (!array) {
+          return 0;
+        }
+        let sum = 0;
+        for (let i = 0; i < array.length; i++) {
+          sum += array[i];
+        }
+        return (sum / array.length).toFixed(2);
+      }
+
+      function removeDuplicates(array, comparator) {
+        let no_duplicates = [];
+        for (const el in array) {
+          const element = array[el];
+          let exists = false;
+          for (const el2 in no_duplicates) {
+            const element2 = no_duplicates[el2];
+            if (comparator(element, element2)) {
+              exists = true;
+            }
+
+            // if (element2.enhed === element.enhed) {
+            //     exists = true
+            // }
+          }
+          if (!exists) {
+            no_duplicates.push(element);
+          }
+        }
+        return no_duplicates;
+      }
+
+      console.debug(
+        removeDuplicates(evaluations, (a, b) => a.enhed == b.enhed).map(
+          (e) => e.enhed
+        )
+      );
+
+      //   console.log(enhed_afdelinger);
+      // console.log(evaluations)
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: Array.from(evaluations).map(
+            (e) => e.enhed + " - " + e.afdeling
+          ),
+          datasets: [
+            {
+              label: "Score",
+              data: Array.from(evaluations).map((e) =>
+                e.evaluering ? avg(e.evaluering.singleAverageScore) : 0
+              ),
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+            x: {
+              display: false,
+            },
+          },
+        },
+      });
+
+      let enheder = removeDuplicates(evaluations, (a, b) => a.enhed == b.enhed);
+      console.debug(Array.from(enheder).map((e) => `${e.enhed} (${Array.from(evaluations).filter(ev => ev.enhed === e.enhed).map(ev => ev.afdeling).join(", ")})`))
+
+      new Chart(document.getElementById("myChart2"), {
+        type: "bar",
+        data: {
+          labels: Array.from(enheder).map((e) => `${e.enhed} (${Array.from(evaluations).filter(ev => ev.enhed === e.enhed).length})`),
+          datasets: [
+            {
+              label: "Score",
+              data: Array.from(enheder).map((e) =>
+                e.evaluering ? avg(e.evaluering.singleAverageScore) : 0
+              ),
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+            x: {
+              // display: false,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
