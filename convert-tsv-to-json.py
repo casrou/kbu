@@ -7,6 +7,8 @@ FILES = [
     "KBU Forløb - Vinter 2022_2023 - Runde 30.tsv",
     "KBU Forløb - Sommeren 2023 - Runde 31.tsv",
     "KBU Forløb - Vinter 2023_2024 - Runde 32.tsv",
+    "KBU Forløb - Sommeren 2024 - Runde 33.tsv",
+    "KBU Forløb - Vinter 2024_2025 - Runde 34.tsv",
 ]
 
 for filename in FILES:

@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tidligere valg af KBU forløb</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <script src="dist/maplibre-gl.js"></script>
-    <link href="dist/maplibre-gl.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tidligere valg af KBU forløb</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <link href="output.css" rel="stylesheet" />
+  <script src="dist/maplibre-gl.js"></script>
+  <link href="dist/maplibre-gl.css" rel="stylesheet" />
 
-    <link href="dist/daisyui.min.css" rel="stylesheet" type="text/css" />
-  </head>
+  <link href="output.css" rel="stylesheet" />
 
-  <body>
-    <div class="isolate bg-white px-6 py-12 sm:py-16 xl:px-32 2xl:px-64">
+  <link href="dist/daisyui.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="isolate bg-white px-6 py-12 sm:py-16 xl:px-32 2xl:px-64">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+      aria-hidden="true">
       <div
-        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-        aria-hidden="true"
-      >
-        <div
-          class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gradient-from to-gradient-to opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-          style="
+        class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gradient-from to-gradient-to opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
+        style="
             clip-path: polygon(
               74.1% 44.1%,
               100% 61.6%,
@@ -41,125 +40,90 @@
               76.1% 97.7%,
               74.1% 44.1%
             );
-          "
-        ></div>
-      </div>
-      <div class="mx-auto max-w-2xl text-center">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Tidligere valg af KBU forløb
-        </h2>
-        <p class="mt-2 text-lg leading-8 text-gray-600">
-          Hvilke muligheder dit nummer havde givet dig
-        </p>
-      </div>
-      <div class="mx-auto mt-8 max-w-8xl sm:mt-10">
-        <div
-          class="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-4"
-        >
-          <div>
-            <label
-              for="input-nummer"
-              class="block text-sm font-semibold leading-6 text-gray-900"
-              >Nummer</label
-            >
-            <div class="mt-2.5">
-              <input
-                id="input-nummer"
-                type="number"
-                name="input-nummer"
-                value="1"
-                min="1"
-                max="1000"
-                class="md:h-36 h-16 text-center block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to text-2xl sm:leading-6"
-              />
-            </div>
-          </div>
-          <div>
-            <label
-              for="input-year"
-              class="block text-sm font-semibold leading-6 text-gray-900"
-              >År</label
-            >
-            <div class="mt-2.5">
-              <select
-                id="input-year"
-                name="input-year"
-                multiple
-                class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
-              >
-                <option value="3" selected>Vinteren 2023-2024</option>
-                <option value="2">Sommeren 2023</option>
-                <option value="1">Vinteren 2022-2023</option>
-                <option value="0">Sommeren 2022</option>
-              </select>
-            </div>
-          </div>
-          <div>
-            <label
-              for="input-speciale"
-              class="block text-sm font-semibold leading-6 text-gray-900"
-              >Speciale</label
-            >
-            <div class="mt-2.5">
-              <select
-                id="input-speciale"
-                name="input-speciale"
-                multiple
-                class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
-              ></select>
-            </div>
-          </div>
-          <div>
-            <label
-              for="input-enhed"
-              class="block text-sm font-semibold leading-6 text-gray-900"
-              >Enhed</label
-            >
-            <div class="mt-2.5">
-              <select
-                id="input-enhed"
-                name="input-enhed"
-                multiple
-                class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"
-              ></select>
-            </div>
+          "></div>
+    </div>
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        Tidligere valg af KBU forløb
+      </h2>
+      <p class="mt-2 text-lg leading-8 text-gray-600">
+        Hvilke muligheder dit nummer havde givet dig
+      </p>
+    </div>
+    <div class="mx-auto mt-8 max-w-8xl sm:mt-10">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <label for="input-nummer" class="block text-sm font-semibold leading-6 text-gray-900">Nummer</label>
+          <div class="mt-2.5">
+            <input id="input-nummer" type="number" name="input-nummer" value="1" min="1" max="1000"
+              class="md:h-36 h-16 text-center block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to text-2xl sm:leading-6" />
           </div>
         </div>
-        <div class="mt-10">
-          <button
-            id="input-submit"
-            type="button"
-            class="block w-full rounded-md bg-gradient-to px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gradient-from focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gradient-to"
-          >
-            Søg
-          </button>
+        <div>
+          <label for="input-year" class="block text-sm font-semibold leading-6 text-gray-900">År</label>
+          <div class="mt-2.5">
+            <select id="input-year" name="input-year" multiple
+              class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6">
+              <option value="5" selected>Vinteren 2024-2025</option>
+              <option value="4">Sommeren 2024</option>
+              <option value="3">Vinteren 2023-2024</option>
+              <option value="2">Sommeren 2023</option>
+              <option value="1">Vinteren 2022-2023</option>
+              <option value="0">Sommeren 2022</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="input-speciale" class="block text-sm font-semibold leading-6 text-gray-900">Speciale</label>
+          <div class="mt-2.5">
+            <select id="input-speciale" name="input-speciale" multiple
+              class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"></select>
+          </div>
+        </div>
+        <div>
+          <label for="input-enhed" class="block text-sm font-semibold leading-6 text-gray-900">Enhed</label>
+          <div class="mt-2.5">
+            <select id="input-enhed" name="input-enhed" multiple
+              class="md:h-36 h-16 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gradient-to sm:text-sm sm:leading-6"></select>
+          </div>
         </div>
       </div>
-      <div class="h-96 mx-auto mt-4 sm:mt-8 rounded-md" id="map"></div>
-
-      <div class="overflow-x-auto mt-4 sm:mt-8 rounded-md">
-        <table class="table table-zebra">
-          <!-- head -->
-          <thead>
-            <tr>
-              <th>Nummer</th>
-              <th>Speciale</th>
-              <th>Enhed</th>
-              <th>Afdeling</th>
-              <th>Evaluering</th>
-            </tr>
-          </thead>
-          <tbody id="results"></tbody>
-        </table>
+      <div class="mt-10">
+        <button id="input-submit" type="button"
+          class="block w-full rounded-md bg-gradient-to px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gradient-from focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gradient-to">
+          Søg
+        </button>
       </div>
     </div>
-    <div>
-      <ul class="text-gray-200" id="error"></ul>
-    </div>
+    <div class="h-96 mx-auto mt-4 sm:mt-8 rounded-md" id="map"></div>
 
-    <script type="module" src="index.js"></script>
-    <script type="module" src="results.js"></script>
-    <script type="module" src="locations.js"></script>
-    <script type="module" src="logging.js"></script>
-  </body>
+    <div class="overflow-x-auto mt-4 sm:mt-8 rounded-md">
+      <table class="table table-zebra">
+        <!-- head -->
+        <thead>
+          <tr>
+            <th>Nummer</th>
+            <th>Speciale</th>
+            <th>Enhed</th>
+            <th>Afdeling</th>
+            <th>Evaluering</th>
+          </tr>
+        </thead>
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <ul class="text-gray-200" id="error"></ul>
+  </div>
+
+  <script type="module" src="index.js"></script>
+  <script type="module" src="results.js"></script>
+  <script type="module" src="locations.js"></script>
+  <script type="module" src="logging.js"></script>
+  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="casrou" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FFDD00"
+    data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</body>
+
 </html>

@@ -13,6 +13,8 @@ FILES = [
     "KBU Forløb - Vinter 2022_2023 - Runde 30.json",
     "KBU Forløb - Sommeren 2023 - Runde 31.json",
     "KBU Forløb - Vinter 2023_2024 - Runde 32.json",
+    "KBU Forløb - Sommeren 2024 - Runde 33.json",
+    "KBU Forløb - Vinter 2024_2025 - Runde 34.json",
 ]
 
 
